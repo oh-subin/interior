@@ -13,6 +13,8 @@
 <title>방구석 인테리어-추천결과</title>
 <link rel="icon" href="img/favicon.png">
 <!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- animate CSS -->
 <link rel="stylesheet" href="css/animate.css">
@@ -195,31 +197,39 @@
 							String pro_style = "모던";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
-						
+
 						for (int i = 0; i < productsLists.size(); i++) {
 						%>
-						
+
 						<!-- td태그에 class: products 추가 (selfmade.css와 연결되어있음) -->
-						<td style="padding: 10px;" class="products"><a
+						<td style="padding: 10px;" class="products">
+							<%-- <a
 							href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name()%>"><img
 								src="<%=productsLists.get(i).getPro_img()%>" alt=""
 								id="productDetail<%=i + 1%>"
-								style="height: 120px; width: 130px; border-radius: 15px;);"></a></td>
-
-
+								style="height: 120px; width: 130px; border-radius: 15px;);"></a> --%>
+							<button type="button" data-toggle="popover" title="<%=productsLists.get(i).getPro_name() %>"
+								data-content="<%=productsLists.get(i).getPro_price() %>원">
+								<a
+									href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name()%>"><img
+									src="<%=productsLists.get(i).getPro_img()%>" alt=""
+									id="productDetail<%=i + 1%>"
+									style="height: 120px; width: 130px; border-radius: 15px;);"></a>
+							</button>
+						</td>
 						<%
 							}
 						%>
 					</tr>
 					<tr>
-					<%-- <%
+						<%-- <%
 						for (int j=0; j < productsLists.size(); j++) { %>
 							<td
 							style="padding: 10px; height: 120px; width: 130px; border-radius: 15px;"
 							class="products"></td>
 						<%}
 					%> --%>
-						
+
 					</tr>
 					<!-- <td><img src="img/homepage/514_1.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
@@ -394,10 +404,13 @@
 
 	<!-- jquery plugins here-->
 	<script src="js/jquery-1.12.1.min.js"></script>
+
 	<!-- popper js -->
 	<script src="js/popper.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<!-- magnific js -->
 	<script src="js/jquery.magnific-popup.js"></script>
 	<!-- swiper js -->
@@ -415,29 +428,16 @@
 	<script src="js/contact.js"></script>
 	<!-- custom js -->
 	<script src="js/custom.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script>
-		function product_detail() {
-
-			var productDetail = document.getElementById("productDetail")
-
-			$.ajax({
-				type : "get",
-				url : "showPro_Detail",
-				data : {
-					"pro_detail" : productDetail.value
-				},
-				dataType : "text",
-				success : function(data) {
-					$("#product-" + id).popover({
-						html : true,
-						content : result.name + "<br>" + result.price + "원"
-					}).popover('show');
-				}
+		$(function() {
+			$('[data-toggle="popover"]').popover({
+				trigger : "hover"
 			});
-		}
-		function product_leave(id) {
-			$("#product-" + id).popover('hide');
-		}
+		});
 	</script>
 </body>
 
