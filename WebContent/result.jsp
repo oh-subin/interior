@@ -33,12 +33,14 @@
 <link rel="stylesheet" href="css/slick.css">
 <!-- style CSS -->
 <link rel="stylesheet" href="css/style.css">
+<!-- selfmade CSS -->
+<link rel="stylesheet" href="css/selfmade.css">
 </head>
 
 <body>
 	<%
-      String email = (String)session.getAttribute("email");   
-   %>
+		String email = (String) session.getAttribute("email");
+	%>
 	<!--::header part start::-->
 	<header class="main_menu">
 		<div class="main_menu_iner">
@@ -79,15 +81,19 @@
 									</li>
 								</ul>
 							</div>
-							<%if(email == null){ %>
+							<%
+								if (email == null) {
+							%>
 							<a href="login.jsp" class="btn_1 d-none d-lg-block">로그인</a> <a
 								href="register.jsp" class="btn_1 d-none d-lg-block"
 								style="margin-left: 5px;">회원가입</a>
-							<%}else{ %>
+							<%
+								} else {
+							%>
 							<div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle btn_1 d-none d-lg-block"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false"><%=email %></a>
+									aria-haspopup="true" aria-expanded="false"><%=email%></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
 										class="dropdown-item" href="LogoutService">로그아웃</a> <a
@@ -96,7 +102,9 @@
 							</div>
 							<a href="basket.jsp" class="btn_1 d-none d-lg-block"
 								style="margin-left: 5px;">장바구니</a>
-							<%} %>
+							<%
+								}
+							%>
 						</nav>
 					</div>
 				</div>
@@ -157,8 +165,7 @@
 								가격 <b style="color: red;">30만원</b>
 							</p>
 						</div>
-						<br>
-						<br>
+						<br> <br>
 						<div class="result_btn">
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
@@ -185,16 +192,36 @@
 				<table>
 					<tr>
 						<%
-						String pro_style="모던";
+							String pro_style = "모던";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						
-						for (int i=0; i < productsLists.size(); i++) {%>
-						<td><a href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name() %>"><img
-								src="<%=productsLists.get(i).getPro_img() %>" alt=""
-								style="height: 120px; width: 130px;"></a></td>
-						<% } %>
-						<!-- <td><img src="img/homepage/514_1.JPG" alt=""
+						for (int i = 0; i < productsLists.size(); i++) {
+						%>
+						
+						<!-- td태그에 class: products 추가 (selfmade.css와 연결되어있음) -->
+						<td style="padding: 10px;" class="products"><a
+							href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name()%>"><img
+								src="<%=productsLists.get(i).getPro_img()%>" alt=""
+								id="productDetail<%=i + 1%>"
+								style="height: 120px; width: 130px; border-radius: 15px;);"></a></td>
+
+
+						<%
+							}
+						%>
+					</tr>
+					<tr>
+					<%-- <%
+						for (int j=0; j < productsLists.size(); j++) { %>
+							<td
+							style="padding: 10px; height: 120px; width: 130px; border-radius: 15px;"
+							class="products"></td>
+						<%}
+					%> --%>
+						
+					</tr>
+					<!-- <td><img src="img/homepage/514_1.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
 						<td><img src="img/homepage/514_2.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
@@ -210,6 +237,7 @@
 							style="height: 120px; width: 130px;"></td>
 						<td><img src="img/homepage/514_8.JPG" alt=""
 							style="height: 120px; width: 130px;"></td> -->
+
 					</tr>
 				</table>
 			</section>
@@ -349,7 +377,9 @@
 						<p class="footer-text m-0">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script>
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
 							All rights reserved | This template is made with <i
 								class="ti-heart" aria-hidden="true"></i> by <a
 								href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -385,6 +415,30 @@
 	<script src="js/contact.js"></script>
 	<!-- custom js -->
 	<script src="js/custom.js"></script>
+	<script>
+		function product_detail() {
+
+			var productDetail = document.getElementById("productDetail")
+
+			$.ajax({
+				type : "get",
+				url : "showPro_Detail",
+				data : {
+					"pro_detail" : productDetail.value
+				},
+				dataType : "text",
+				success : function(data) {
+					$("#product-" + id).popover({
+						html : true,
+						content : result.name + "<br>" + result.price + "원"
+					}).popover('show');
+				}
+			});
+		}
+		function product_leave(id) {
+			$("#product-" + id).popover('hide');
+		}
+	</script>
 </body>
 
 </html>
