@@ -192,22 +192,22 @@
 <hr><div data-sticky-enabled="false" data-sticky-disabled="false" data-sticky-always="false" data-direction="top" data-offset="79.99431610107422" class="sticky-container production-selling-navigation-wrap" style="position: sticky; top: 79.9943px; padding-bottom: 10px;">
     <div class="nav_product_detail" style="position: relative;">
         <nav class="production-selling-navigation__content">
-            <ol class="production-selling-navigation__list" style="padding-top: 20px;">
+            <!-- <ol class="production-selling-navigation__list" style="padding-top: 20px;">
                 <li>
-                    <a class="class="production-selling-navigation__item production-selling-navigation__item--active"" href="" style="font-size:20px;"><b style="color: snow;"">상품정보</b></a>
+                    <a class="class="production-selling-navigation__item production-selling-navigation__item--active"" href="" style="font-size:20px;"><b style="color: snow;""></b></a>
                 </li>
                 <li>
-                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;">리뷰</b></a>
-                    <span class="production-selling-navigation__item__count" style="font-size:15px;">1,100</span>
+                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;"></b></a>
+                    <span class="production-selling-navigation__item__count" style="font-size:15px;"></span>
                 </li>
                 <li>
-                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;"">문의</b></a>
-                    <span class="production-selling-navigation__item__count" style="font-size:15px;">500</span>
+                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;""></b></a>
+                    <span class="production-selling-navigation__item__count" style="font-size:15px;"></span>
                 </li>
                 <li>
-                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;">배송/환불</b></a>
+                    <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: snow;"></b></a>
                 </li>
-            </ol>
+            </ol> -->
         </nav>
     </div>
 </div>

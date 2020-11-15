@@ -33,6 +33,8 @@
 <link rel="stylesheet" href="css/slick.css">
 <!-- style CSS -->
 <link rel="stylesheet" href="css/style.css">
+<!-- selfmade.css -->
+<link rel="stylesheet" href="css/selfmade.css">
 </head>
 
 <body>
@@ -80,8 +82,10 @@
 								</ul>
 							</div>
 							<%if(email == null){ %>
-								<a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
-		                        <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+							<a href="login.jsp"
+								style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+							<a href="register.jsp"
+								style="margin-left: 15px; color: rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
 							<%}else{ %>
 							<div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle btn_1 d-none d-lg-block"
@@ -156,8 +160,7 @@
 								가격 <b style="color: red;">30만원</b>
 							</p>
 						</div>
-						<br>
-						<br>
+						<br> <br>
 						<div class="result_btn">
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
@@ -189,10 +192,19 @@
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						
 						for (int i=0; i < productsLists.size(); i++) {%>
-						<td><a href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name() %>"><img
-								src="<%=productsLists.get(i).getPro_img() %>" alt=""
-								style="height: 120px; width: 130px;"></a></td>
+						<td class="products">
+							<button type="button" class="btn"
+								data-toggle="popover"
+								title="<%=productsLists.get(i).getPro_name() %>"
+								data-content="<%=productsLists.get(i).getPro_price() %>원">
+								<a href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name() %>"><img
+									src="<%=productsLists.get(i).getPro_img() %>" alt=""
+									style="height: 120px; width: 130px;"></a>
+							</button>
+						</td>
 						<% } %>
+
+
 						<!-- <td><img src="img/homepage/514_1.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
 						<td><img src="img/homepage/514_2.JPG" alt=""
@@ -284,19 +296,25 @@
 
 	<!-- footer part start-->
 	<footer class="footer-area">
-            
-             
-                 <div class="row justify-content-center">
-                     <div class="col-lg-12">
-                         <div class="copyright_part_text text-center">
-                             <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                         </div>
-                     </div>
-                 </div>
-             
-         </footer>
+
+
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="copyright_part_text text-center">
+					<p class="footer-text m-0">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script>
+						All rights reserved | This template is made with <i
+							class="ti-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
 	<!-- footer part end-->
 
 	<!-- jquery plugins here-->
@@ -322,6 +340,11 @@
 	<script src="js/contact.js"></script>
 	<!-- custom js -->
 	<script src="js/custom.js"></script>
+	<script>
+	$(function () {
+		  $('[data-toggle="popover"]').popover({trigger: "hover"})
+		})
+	</script>
 </body>
 
 </html>
