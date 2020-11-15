@@ -79,8 +79,8 @@
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" class="btn_1 d-none d-lg-block" >로그인</a>
-	                                <a href="register.jsp" class="btn_1 d-none d-lg-block" style="margin-left: 5px;">회원가입</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 	                                    <a class="nav-link dropdown-toggle btn_1 d-none d-lg-block" id="navbarDropdown"  role="button" 
@@ -174,7 +174,7 @@
                                                 <option value="15">베이지</option>
                                             </select>
                                         </div>
-                                        <div class="form_colum">
+                                        <div class="form_colum" style="margin-right:290px">
                                             <select class="nc_select">
                                                 <option selected>소품 색상 </option>
                                                 <option value="1">흰색</option>
@@ -194,57 +194,8 @@
                                                 <option value="15">베이지</option>
                                             </select>
                                         </div>
-                                        <div class="form_colum">
-                                           <select class="nc_select">
-                                            <option selected>재료 </option>
-                                            <option value="1">가죽</option>
-                                            <option value="2">나무</option>
-                                            <option value="3">유리</option>
-                                            <option value="4">직물</option>
-                                            <option value="5">타일</option>
-                                            <option value="6">벽돌</option>
-                                            <option value="7">철</option>
-                                            <option value="8">천역목</option>
-                                            <option value="9">플라스틱</option>
-                                            <option value="10">스테인레스</option>
-                                            <option value="11">다양하고 새로움</option>
-                                           </select>
-                                        </div>
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>형태 </option>
-                                                <option value="1">면</option>
-                                                <option value="2">단순</option>
-                                                <option value="3">깔끔</option>
-                                                <option value="4">직선</option>
-                                                <option value="5">편안함</option>
-                                                <option value="6">소재강조</option>
-                                                <option value="7">자연스러움</option>
-                                                <option value="8">유기적라인</option>
-                                                <option value="9">화려하고 장식적인 형태</option>
-                                                <option value="10">동양의 미가 강조된 스타일</option>
-                                                
-                                            </select>
-                                        </div>
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>질감 </option>
-                                                <option value="1">거침</option>
-                                                <option value="2">단단</option>
-                                                <option value="3">매끈</option>
-                                                <option value="4">무광</option>
-                                                <option value="5">묵직함</option>
-                                                <option value="6">투박함</option>
-                                                <option value="7">다양함</option>
-                                                <option value="8">천연소재</option>
-                                                <option value="9">반질반질</option>
-                                                <option value="10">반들반들</option>
-                                                <option value="11">자연소재</option>
-                                                <option value="12">부드러움</option>
-                                            </select>
-                                        </div>
                                         <div class="form_btn">
-                                           <a href="result.jsp" class="btn_1" style="margin-top: 50px;margin-left: 430px;">추천 시작</a>
+                                           <a href="result.jsp" class="btn_1">추천 시작</a>
                                        </div>
                                     </div>
                                 </form>
@@ -316,74 +267,19 @@
 
     <!-- footer part start-->
     <footer class="footer-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-sm-6 col-md-5">
-                    <div class="single-footer-widget">
-                        <h4>(주)방구석 인테리어를 만든 사람들</h4>
-                        <ul>
-                            <li><a href="#">오수빈, 팀장</a></li>
-                            <li><a href="#">임지혜, 팀원</a></li>
-                            <li><a href="#">이주영, 팀원</a></li>
-                            <li><a href="#">박하영, 팀원</a></li>
-                            <li><a href="#">김소희, 팀원</a></li>
-                            <li><a href="#">강지아, 팀원</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="single-footer-widget">
-                        <h4>Send us Email</h4>
-                        <div class="form-wrap" id="mc_embed_signup">
-                            <form target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="form-inline">
-                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-                                    required="" type="email">
-                                <button class="click-btn btn btn-default text-uppercase"> <i class="far fa-paper-plane"></i>
-                                </button>
-                                <div style="position: absolute; left: -5000px;">
-                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
-                                        type="text">
-                                </div>
-
-                                <div class="info"></div>
-                            </form>
-                        </div>
-                        <p>궁금한 점은 이메일로 문의바랍니다.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="single-footer-widget footer_icon">
-                        <h4>Contact Us</h4>
-                        <p>광주광역시 남구 송암로60 광주CGI센터 2층 
-                           062-655-3509
-                        </p>
-                        <span>admin@admin.com</span>
-                         <div class="social-icons">
-                             <a href="#"><i class="ti-facebook"></i></a>
-                             <a href="#"><i class="ti-twitter-alt"></i></a>
-                             <a href="#"><i class="ti-pinterest"></i></a>
-                             <a href="#"><i class="ti-instagram"></i></a>
+            
+             
+                 <div class="row justify-content-center">
+                     <div class="col-lg-12">
+                         <div class="copyright_part_text text-center">
+                             <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                          </div>
                      </div>
                  </div>
-             </div>
-         </div>
-         <div class="container-fluid">
-             <div class="row justify-content-center">
-                 <div class="col-lg-12">
-                     <div class="copyright_part_text text-center">
-                         <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
- <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
+             
+         </footer>
      <!-- footer part end-->
  
      <!-- jquery plugins here-->

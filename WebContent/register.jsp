@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<% request.setCharacterEncoding("utf-8"); %>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<% request.setCharacterEncoding("EUC-KR"); %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´ - íšŒì›ê°€ìž…</title>
+  <title>¹æ±¸¼® ÀÎÅ×¸®¾î - È¸¿ø°¡ÀÔ</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -35,7 +35,7 @@
           <div class="col-lg-7">
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">íšŒì›ê°€ìž…</h1>
+                <h1 class="h4 text-gray-900 mb-4">È¸¿ø°¡ÀÔ</h1>
               </div>
               <form class="user" action="JoinService" method="post" accept-charset="EUC-KR">
                 <div class="form-group row">
@@ -67,10 +67,10 @@
 				        	
 				        	if(data == "true"){
 				        		p1.style.cssText ="color : red;"
-				        		p1.innerHTML ="ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì•„ì´ë””ìž…ë‹ˆë‹¤."
+				        		p1.innerHTML ="»ç¿ëÇÒ ¼ö ¾ø´Â ¾ÆÀÌµðÀÔ´Ï´Ù."
 				        	}else{
 				        		p1.style.cssText ="color : blue;"
-				        		p1.innerHTML ="ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì•„ì´ë””ìž…ë‹ˆë‹¤."
+				        		p1.innerHTML ="»ç¿ëÇÒ ¼ö ÀÖ´Â ¾ÆÀÌµðÀÔ´Ï´Ù."
 				        	}
 				        	 
 				         },
@@ -94,20 +94,20 @@
                 <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck" required>
-                        <label class="custom-control-label" for="customCheck">ì´ìš©ì•½ê´€ì— ë™ì˜í•©ë‹ˆë‹¤.</label>
+                        <label class="custom-control-label" for="customCheck">ÀÌ¿ë¾à°ü¿¡ µ¿ÀÇÇÕ´Ï´Ù.</label>
                       </div>
                 </div>
-                <input type="submit" value ="ê°€ìž…"  class="btn btn-primary btn-user btn-block">
+                <input type="submit" value ="°¡ÀÔ"  class="btn btn-primary btn-user btn-block">
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="javascript:void(0)">ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠìœ¼ì…¨ë‚˜ìš”?</a>
+                <a class="small" href="javascript:void(0)">ºñ¹Ð¹øÈ£¸¦ ÀØÀ¸¼Ì³ª¿ä?</a>
               </div>
               <div class="text-center">
-                <a class="small" href="login.jsp">ì´ë¯¸ ê³„ì •ì´ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸</a>
+                <a class="small" href="login.jsp">ÀÌ¹Ì °èÁ¤ÀÌ ÀÖ½À´Ï´Ù. ·Î±×ÀÎ</a>
               </div>
               <div class="text-center">
-                    <a class="small" href="main.jsp">ë©”ì¸ íŽ˜ì´ì§€ë¡œ ëŒì•„ê°€ê¸°</a>
+                    <a class="small" href="main.jsp">¸ÞÀÎ ÆäÀÌÁö·Î µ¹¾Æ°¡±â</a>
               </div>
             </div>
           </div>

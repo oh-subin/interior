@@ -79,8 +79,8 @@
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" class="btn_1 d-none d-lg-block" >로그인</a>
-	                                <a href="register.jsp" class="btn_1 d-none d-lg-block" style="margin-left: 5px;">회원가입</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 	                                    <a class="nav-link dropdown-toggle btn_1 d-none d-lg-block" id="navbarDropdown"  role="button" 
@@ -101,7 +101,47 @@
         </header>
  <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
-         <br><br><br><br>
+ <!-- 슬라이드바 start -->
+         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 900px; margin-left: 200px; margin-top: 50px;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/homepage/picture4.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 style="color:white; text-align: left;">첫 구매 할인</h2>
+                  <p style="color:white; font-size:25px; text-align: left;">할인 쿠폰 받아가세요~</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/homepage/christmas1.jpeg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:white; text-align: right; margin-bottom:20px">크리스마스 할인</h2>
+                    <p style="color:white; font-size:25px; text-align:right; margin-bottom:200px">크리스마스 홈키트 50% 할인전!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/homepage/picture2.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:white; text-align: left;">최저가 제품만 모았어요</h2>
+                    <p style="color:white; font-size:25px; text-align: left;">이번주 최저가는?</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+         <!-- 슬라이드바 end -->
+ 
         <!--top place start-->
          <section class="top_place section_padding">
              <div class="container">
@@ -336,63 +376,8 @@
           
          <!-- footer part start-->
          <footer class="footer-area">
-             <div class="container">
-                 <div class="row justify-content-between">
-                     <div class="col-sm-6 col-md-5">
-                         <div class="single-footer-widget">
-                             <h4>(주)방구석 인테리어를 만든 사람들</h4>
-                             <ul>
-                                 <li><a href="#">오수빈, 팀장</a></li>
-                                 <li><a href="#">임지혜, 팀원</a></li>
-                                 <li><a href="#">이주영, 팀원</a></li>
-                                 <li><a href="#">박하영, 팀원</a></li>
-                                 <li><a href="#">김소희, 팀원</a></li>
-                                 <li><a href="#">강지아, 팀원</a></li>
-                             </ul>
-     
-                         </div>
-                     </div>
-                     <div class="col-sm-6 col-md-4">
-                         <div class="single-footer-widget">
-                             <h4>Send us Email</h4>
-                             <div class="form-wrap" id="mc_embed_signup">
-                                 <form target="_blank"
-                                     action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                     method="get" class="form-inline">
-                                     <input class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-                                         required="" type="email">
-                                     <button class="click-btn btn btn-default text-uppercase"> <i class="far fa-paper-plane"></i>
-                                     </button>
-                                     <div style="position: absolute; left: -5000px;">
-                                         <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
-                                             type="text">
-                                     </div>
-     
-                                     <div class="info"></div>
-                                 </form>
-                             </div>
-                             <p>궁금한 점은 이메일로 문의바랍니다.</p>
-                         </div>
-                     </div>
-                     <div class="col-sm-6 col-md-3">
-                         <div class="single-footer-widget footer_icon">
-                             <h4>Contact Us</h4>
-                             <p>광주광역시 남구 송암로60 광주CGI센터 2층 
-                                062-655-3509
-                             </p>
-                             <span>admin@admin.com</span>
-                             <div class="social-icons">
-                                 <a href="#"><i class="ti-facebook"></i></a>
-                                 <a href="#"><i class="ti-twitter-alt"></i></a>
-                                 <a href="#"><i class="ti-pinterest"></i></a>
-                                 <a href="#"><i class="ti-instagram"></i></a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="container-fluid">
+            
+             
                  <div class="row justify-content-center">
                      <div class="col-lg-12">
                          <div class="copyright_part_text text-center">
@@ -402,7 +387,7 @@
                          </div>
                      </div>
                  </div>
-             </div>
+             
          </footer>
          <!-- footer part end-->
      

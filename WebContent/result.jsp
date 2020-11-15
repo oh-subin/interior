@@ -13,8 +13,6 @@
 <title>방구석 인테리어-추천결과</title>
 <link rel="icon" href="img/favicon.png">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- animate CSS -->
 <link rel="stylesheet" href="css/animate.css">
@@ -35,14 +33,12 @@
 <link rel="stylesheet" href="css/slick.css">
 <!-- style CSS -->
 <link rel="stylesheet" href="css/style.css">
-<!-- selfmade CSS -->
-<link rel="stylesheet" href="css/selfmade.css">
 </head>
 
 <body>
 	<%
-		String email = (String) session.getAttribute("email");
-	%>
+      String email = (String)session.getAttribute("email");   
+   %>
 	<!--::header part start::-->
 	<header class="main_menu">
 		<div class="main_menu_iner">
@@ -83,19 +79,14 @@
 									</li>
 								</ul>
 							</div>
-							<%
-								if (email == null) {
-							%>
-							<a href="login.jsp" class="btn_1 d-none d-lg-block">로그인</a> <a
-								href="register.jsp" class="btn_1 d-none d-lg-block"
-								style="margin-left: 5px;">회원가입</a>
-							<%
-								} else {
-							%>
+							<%if(email == null){ %>
+								<a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+		                        <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+							<%}else{ %>
 							<div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle btn_1 d-none d-lg-block"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false"><%=email%></a>
+									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
 										class="dropdown-item" href="LogoutService">로그아웃</a> <a
@@ -104,9 +95,7 @@
 							</div>
 							<a href="basket.jsp" class="btn_1 d-none d-lg-block"
 								style="margin-left: 5px;">장바구니</a>
-							<%
-								}
-							%>
+							<%} %>
 						</nav>
 					</div>
 				</div>
@@ -167,7 +156,8 @@
 								가격 <b style="color: red;">30만원</b>
 							</p>
 						</div>
-						<br> <br>
+						<br>
+						<br>
 						<div class="result_btn">
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
@@ -194,44 +184,16 @@
 				<table>
 					<tr>
 						<%
-							String pro_style = "모던";
+						String pro_style="모던";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
-
-						for (int i = 0; i < productsLists.size(); i++) {
-						%>
-
-						<!-- td태그에 class: products 추가 (selfmade.css와 연결되어있음) -->
-						<td style="padding: 10px;" class="products">
-							<%-- <a
-							href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name()%>"><img
-								src="<%=productsLists.get(i).getPro_img()%>" alt=""
-								id="productDetail<%=i + 1%>"
-								style="height: 120px; width: 130px; border-radius: 15px;);"></a> --%>
-							<button type="button" data-toggle="popover" title="<%=productsLists.get(i).getPro_name() %>"
-								data-content="<%=productsLists.get(i).getPro_price() %>원">
-								<a
-									href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name()%>"><img
-									src="<%=productsLists.get(i).getPro_img()%>" alt=""
-									id="productDetail<%=i + 1%>"
-									style="height: 120px; width: 130px; border-radius: 15px;);"></a>
-							</button>
-						</td>
-						<%
-							}
-						%>
-					</tr>
-					<tr>
-						<%-- <%
-						for (int j=0; j < productsLists.size(); j++) { %>
-							<td
-							style="padding: 10px; height: 120px; width: 130px; border-radius: 15px;"
-							class="products"></td>
-						<%}
-					%> --%>
-
-					</tr>
-					<!-- <td><img src="img/homepage/514_1.JPG" alt=""
+						
+						for (int i=0; i < productsLists.size(); i++) {%>
+						<td><a href="Detail_page.jsp?pro_name=<%=productsLists.get(i).getPro_name() %>"><img
+								src="<%=productsLists.get(i).getPro_img() %>" alt=""
+								style="height: 120px; width: 130px;"></a></td>
+						<% } %>
+						<!-- <td><img src="img/homepage/514_1.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
 						<td><img src="img/homepage/514_2.JPG" alt=""
 							style="height: 120px; width: 130px;"></td>
@@ -247,7 +209,6 @@
 							style="height: 120px; width: 130px;"></td>
 						<td><img src="img/homepage/514_8.JPG" alt=""
 							style="height: 120px; width: 130px;"></td> -->
-
 					</tr>
 				</table>
 			</section>
@@ -323,94 +284,27 @@
 
 	<!-- footer part start-->
 	<footer class="footer-area">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-sm-6 col-md-5">
-					<div class="single-footer-widget">
-						<h4>(주)방구석 인테리어를 만든 사람들</h4>
-						<ul>
-							<li><a href="#">오수빈, 팀장</a></li>
-							<li><a href="#">임지혜, 팀원</a></li>
-							<li><a href="#">이주영, 팀원</a></li>
-							<li><a href="#">박하영, 팀원</a></li>
-							<li><a href="#">김소희, 팀원</a></li>
-							<li><a href="#">강지아, 팀원</a></li>
-						</ul>
-
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="single-footer-widget">
-						<h4>Send us Email</h4>
-						<div class="form-wrap" id="mc_embed_signup">
-							<form target="_blank"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="form-inline">
-								<input class="form-control" name="EMAIL"
-									placeholder="Your Email Address"
-									onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Your Email Address '" required=""
-									type="email">
-								<button class="click-btn btn btn-default text-uppercase">
-									<i class="far fa-paper-plane"></i>
-								</button>
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a"
-										tabindex="-1" value="" type="text">
-								</div>
-
-								<div class="info"></div>
-							</form>
-						</div>
-						<p>궁금한 점은 이메일로 문의바랍니다.</p>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="single-footer-widget footer_icon">
-						<h4>Contact Us</h4>
-						<p>광주광역시 남구 송암로60 광주CGI센터 2층 062-655-3509</p>
-						<span>admin@admin.com</span>
-						<div class="social-icons">
-							<a href="#"><i class="ti-facebook"></i></a> <a href="#"><i
-								class="ti-twitter-alt"></i></a> <a href="#"><i
-								class="ti-pinterest"></i></a> <a href="#"><i
-								class="ti-instagram"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="copyright_part_text text-center">
-						<p class="footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved | This template is made with <i
-								class="ti-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+            
+             
+                 <div class="row justify-content-center">
+                     <div class="col-lg-12">
+                         <div class="copyright_part_text text-center">
+                             <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                         </div>
+                     </div>
+                 </div>
+             
+         </footer>
 	<!-- footer part end-->
 
 	<!-- jquery plugins here-->
 	<script src="js/jquery-1.12.1.min.js"></script>
-
 	<!-- popper js -->
 	<script src="js/popper.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<!-- magnific js -->
 	<script src="js/jquery.magnific-popup.js"></script>
 	<!-- swiper js -->
@@ -428,17 +322,6 @@
 	<script src="js/contact.js"></script>
 	<!-- custom js -->
 	<script src="js/custom.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script>
-		$(function() {
-			$('[data-toggle="popover"]').popover({
-				trigger : "hover"
-			});
-		});
-	</script>
 </body>
 
 </html>
