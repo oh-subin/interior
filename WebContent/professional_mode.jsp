@@ -1,506 +1,372 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%@ page import="java.util.ArrayList"%>
-<%@ page import="com.DAO.homekitDAO"%>
-<%@ page import="com.DTO.homekitDTO"%>
+<<<<<<< HEAD
+
+=======
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 <!doctype html>
 <html lang="en">
 
 <head>
-        <!-- Required meta tags -->
-        <meta charset="EUC-KR">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>¹æ±¸¼® ÀÎÅ×¸®¾î-Àü¹®°¡ÃßÀü</title>
-        <link rel="icon" href="img/favicon.png">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- animate CSS -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- owl carousel CSS -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <!-- themify CSS -->
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <!-- flaticon CSS -->
-        <link rel="stylesheet" href="css/flaticon.css">
-        <!-- fontawesome CSS -->
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <!-- magnific CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/gijgo.min.css">
-        <!-- niceselect CSS -->
-        <link rel="stylesheet" href="css/nice-select.css">
-        <!-- slick CSS -->
-        <link rel="stylesheet" href="css/slick.css">
-        <!-- style CSS -->
-        <link rel="stylesheet" href="css/style.css">
+<<<<<<< HEAD
         
-  		
-    </head>
-    
-    <body>
-        <%
+=======
+<!-- Required meta tags -->
+<meta charset="EUC-KR">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ì „ë¬¸ê°€ì¶”ì „</title>
+<link rel="icon" href="img/favicon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- animate CSS -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- owl carousel CSS -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<!-- themify CSS -->
+<link rel="stylesheet" href="css/themify-icons.css">
+<!-- flaticon CSS -->
+<link rel="stylesheet" href="css/flaticon.css">
+<!-- fontawesome CSS -->
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<!-- magnific CSS -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/gijgo.min.css">
+<!-- niceselect CSS -->
+<link rel="stylesheet" href="css/nice-select.css">
+<!-- slick CSS -->
+<link rel="stylesheet" href="css/slick.css">
+<!-- style CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<%
 		String email = (String)session.getAttribute("email");	
 	%>
-        <!--::header part start::-->
-        <header class="main_menu">
-            <div class="main_menu_iner">
-                <div class="container">
-                    <div class="row align-items-center ">
-                        <div class="col-lg-12">
-                            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
-                                <div class="collapse navbar-collapse main-menu-item justify-content-center"
-                                    id="navbarSupportedContent">
-                                    <ul class="navbar-nav">
-                                    	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">Àü¹®°¡ ÃßÃµ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="Beginner_Mode.jsp">ÃÊº¸ÀÚ ÃßÃµ</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                                <a class="dropdown-item" href="SNS.jsp">Å°Æ® Á¶ÇÕ</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="QA.jsp">Q&A</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <%if(email == null){ %>
-	                                <a href="login.jsp" class="btn_1 d-none d-lg-block" >·Î±×ÀÎ</a>
-	                                <a href="register.jsp" class="btn_1 d-none d-lg-block" style="margin-left: 5px;">È¸¿ø°¡ÀÔ</a>
-                                <%}else{ %>
-	                                <div class="nav-item dropdown">
-	                                    <a class="nav-link dropdown-toggle btn_1 d-none d-lg-block" id="navbarDropdown"  role="button" 
-	                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=email %></a>
-	                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                                          <a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a>
-		                                      <a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a>
-		                                      <a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
-	                                        </div>
-	                                </div>
-	                                <a href="basket.jsp" class="btn_1 d-none d-lg-block" style="margin-left: 5px;">Àå¹Ù±¸´Ï</a>
-                                <%} %>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-     <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
-     <!-- Header part end-->
- 
-     <!-- ¼öÁ¤: Àü¹®°¡ ÃßÃµ ¸ðµå ÆäÀÌÁö begin -->
-     <!-- banner part start-->
-     <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item text-center">
-                             <h2>professional mode</h2>
-                             <p style="padding-bottom: 80px;">ÀÎÅ×¸®¾î°¡ ÀÍ¼÷ÇÑ ´ç½ÅÀ» À§ÇÑ ÃßÃµ ¸ðµåÀÔ´Ï´Ù.</p>
-                             
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <!-- banner part start-->
-   
-   <!-- ½ºÅ©·Ñ ¸Þ´º¹Ù begin -->
-   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
-      $( document ).ready( function() {
-        var jbOffset = $( '.jbMenu' ).offset();
-        $( window ).scroll( function() {
-          if ( $( document ).scrollTop() > jbOffset.top ) {
-            $( '.jbMenu' ).addClass( 'jbFixed' );
-          }
-          else {
-            $( '.jbMenu' ).removeClass( 'jbFixed' );
-          }
-        });
-      } );
-    </script>
-    
-    <div class="jbMenu" style="height: 180px;">
-      <p>
-        <div style="width: 600px;margin-left: 400px;height: 20px;">
- 			<div style="width: 600px;height: 20px;margin-top: 110px;">
-			<b class="prograss_text">ÃßÃµ ÁøÇàµµ <b style="padding-left: 440px;">0%</b></b>
-			</div>
-    		<div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
-  				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-			</div>
- 		</div>
-      </p>
-    </div>
-    
-   <!-- ½ºÅ©·Ñ ¸Þ´º¹Ù end -->
-   
-  <!-- prograss bar 100% begin -->
- <!-- <div style="width: 600px;margin-left: 400px;height: 70px;">
- 	<div style="width: 600px;height: 20px;margin-top: 90px;">
-		<b class="prograss_text">ÃßÃµ ÁøÇàµµ <b style="padding-left: 440px;">100%</b></b>
-	</div>
-    <div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
-  		<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-	</div>
- </div> -->
- <!-- prograss bar end  -->
-     
-     <!-- ÅÂ±×ÃßÃµºÎºÐ begin -->
- <!-- booking part start-->
- <section class="booking_part" style="margin-top: 100px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="booking_menu">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <div>
-	  					<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<<<<<<< HEAD
+        
+=======
+	<!--::header part start::-->
+	<header class="main_menu">
+		<div class="main_menu_iner">
+			<div class="container">
+				<div class="row align-items-center ">
+					<div class="col-lg-12">
+						<nav
+							class="navbar navbar-expand-lg navbar-light justify-content-between">
+							<a class="navbar-brand" href="main.jsp"> <img
+								src="img/homepage/logo.JPG" alt="logo" style="width: 205px;">
+							</a>
+							<button class="navbar-toggler" type="button"
+								data-toggle="collapse" data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
+							<div
+								class="collapse navbar-collapse main-menu-item justify-content-center"
+								id="navbarSupportedContent">
+								<ul class="navbar-nav">
+									<li class="nav-item"><a class="nav-link" href="about.jsp">ì†Œê°œ</a>
+									</li>
+									<li class="nav-item"><a class="nav-link"
+										href="professional_mode.jsp">ì „ë¬¸ê°€ ì¶”ì²œ</a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="Beginner_Mode.jsp">ì´ˆë³´ìž ì¶”ì²œ</a></li>
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" id="navbarDropdown"
+										role="button" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false"> ì»¤ë®¤ë‹ˆí‹° </a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸
+												íŒë§¤</a> <a class="dropdown-item" href="SNS.jsp">í‚¤íŠ¸ ì¡°í•©</a>
+										</div></li>
+									<li class="nav-item"><a class="nav-link" href="QA.jsp">Q&A</a>
+									</li>
+								</ul>
+							</div>
+							<%if(email == null){ %>
+							<a href="login.jsp"
+								style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+							<a href="register.jsp"
+								style="margin-left: 15px; color: rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
+							<%}else{ %>
+							<div class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle btn_1 d-none d-lg-block"
+									id="navbarDropdown" role="button" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"><%=email %></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> <a
+										class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> <a
+										class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
+								</div>
+							</div>
+							<a href="basket.jsp" class="btn_1 d-none d-lg-block"
+								style="margin-left: 5px;">ìž¥ë°”êµ¬ë‹ˆ</a>
+							<%} %>
+						</nav>
 					</div>
-                        <li class="nav-item">
-                        
-                        <a class="nav-link active" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="true">ÀÎÅ×¸®¾î ÃßÃµÀ» À§ÇØ ¾Æ·¡ÀÇ ÅÂ±×¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="booking_content">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="hotel-tab" style="margin-bottom:500px;">
-                            <div class="booking_form">
-                                <form action="#">
-                                    <div class="form-row">
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>ÀÎÅ×¸®¾î ½ºÅ¸ÀÏ </option>
-                                                <option value="1">¸ð´ø</option>
-                                                <option value="2">³»Ãß·²</option>
-                                                <option value="3">ºÏÀ¯·´</option>
-                                                <option value="4">ºóÆ¼Áö&·¹Æ®·Î</option>
-                                                <option value="5">À¯´ÏÅ©&¹Í½º¸ÅÄ¡</option>
-                                                <option value="6">Å¬·¡½Ä&¾ØÆ½</option>
-                                                <option value="7">ÇÁ·Î¹æ½º&·Î¸ÇÆ½</option>
-                                            </select>
-                                         </div>
-                                         <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>¹è°æ »ö»ó </option>
-                                                <option value="1">Èò»ö</option>
-                                                <option value="2">°¥»ö</option>
-                                                <option value="3">È¸»ö</option>
-                                                <option value="4">°ËÀº»ö</option>
-                                                <option value="5">¹«Ã¤»ö</option>
-                                                <option value="6">ºñºñµåÄÃ·¯</option>
-                                                <option value="7">ºû¹Ù·£»ö</option>
-                                                <option value="8">¾îµÎ¿î»ö</option>
-                                                <option value="9">ÀÚ¿¬ÀÇ»ö</option>
-                                                <option value="10">Â÷ºÐÇÑ»ö</option>
-                                                <option value="11">¿ø»ö</option>
-                                                <option value="12">³ª¹«»ö</option>
-                                                <option value="13">Å©¸²»ö</option>
-                                                <option value="14">ÆÄ½ºÅÚ</option>
-                                                <option value="15">º£ÀÌÁö</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>¼ÒÇ° »ö»ó </option>
-                                                <option value="1">Èò»ö</option>
-                                                <option value="2">°¥»ö</option>
-                                                <option value="3">È¸»ö</option>
-                                                <option value="4">°ËÀº»ö</option>
-                                                <option value="5">¹«Ã¤»ö</option>
-                                                <option value="6">ºñºñµåÄÃ·¯</option>
-                                                <option value="7">ºû¹Ù·£»ö</option>
-                                                <option value="8">¾îµÎ¿î»ö</option>
-                                                <option value="9">ÀÚ¿¬ÀÇ»ö</option>
-                                                <option value="10">Â÷ºÐÇÑ»ö</option>
-                                                <option value="11">¿ø»ö</option>
-                                                <option value="12">³ª¹«»ö</option>
-                                                <option value="13">Å©¸²»ö</option>
-                                                <option value="14">ÆÄ½ºÅÚ</option>
-                                                <option value="15">º£ÀÌÁö</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_colum">
-                                           <select class="nc_select">
-                                            <option selected>Àç·á </option>
-                                            <option value="1">°¡Á×</option>
-                                            <option value="2">³ª¹«</option>
-                                            <option value="3">À¯¸®</option>
-                                            <option value="4">Á÷¹°</option>
-                                            <option value="5">Å¸ÀÏ</option>
-                                            <option value="6">º®µ¹</option>
-                                            <option value="7">Ã¶</option>
-                                            <option value="8">Ãµ¿ª¸ñ</option>
-                                            <option value="9">ÇÃ¶ó½ºÆ½</option>
-                                            <option value="10">½ºÅ×ÀÎ·¹½º</option>
-                                            <option value="11">´Ù¾çÇÏ°í »õ·Î¿ò</option>
-                                           </select>
-                                        </div>
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>ÇüÅÂ </option>
-                                                <option value="1">¸é</option>
-                                                <option value="2">´Ü¼ø</option>
-                                                <option value="3">±ò²û</option>
-                                                <option value="4">Á÷¼±</option>
-                                                <option value="5">Æí¾ÈÇÔ</option>
-                                                <option value="6">¼ÒÀç°­Á¶</option>
-                                                <option value="7">ÀÚ¿¬½º·¯¿ò</option>
-                                                <option value="8">À¯±âÀû¶óÀÎ</option>
-                                                <option value="9">È­·ÁÇÏ°í Àå½ÄÀûÀÎ ÇüÅÂ</option>
-                                                <option value="10">µ¿¾çÀÇ ¹Ì°¡ °­Á¶µÈ ½ºÅ¸ÀÏ</option>
-                                                
-                                            </select>
-                                        </div>
-                                        <div class="form_colum">
-                                            <select class="nc_select">
-                                                <option selected>Áú°¨ </option>
-                                                <option value="1">°ÅÄ§</option>
-                                                <option value="2">´Ü´Ü</option>
-                                                <option value="3">¸Å²ö</option>
-                                                <option value="4">¹«±¤</option>
-                                                <option value="5">¹¬Á÷ÇÔ</option>
-                                                <option value="6">Åõ¹ÚÇÔ</option>
-                                                <option value="7">´Ù¾çÇÔ</option>
-                                                <option value="8">Ãµ¿¬¼ÒÀç</option>
-                                                <option value="9">¹ÝÁú¹ÝÁú</option>
-                                                <option value="10">¹Ýµé¹Ýµé</option>
-                                                <option value="11">ÀÚ¿¬¼ÒÀç</option>
-                                                <option value="12">ºÎµå·¯¿ò</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_btn">
-                                           <a href="result.jsp" class="btn_1" style="margin-top: 50px;margin-left: 430px;">ÃßÃµ ½ÃÀÛ</a>
-                                       </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Header part end-->
-<!-- ÅÂ±×ÃßÃµºÎºÐ end -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
+	<!-- Header part end-->
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
- <br><br><br><br><br>
-		<!-- ¹Ýº¹¹®ÀÌ ½ÃÀÛµÇ´Â ºÎºÐ -->
-					<%
-	               homekitDAO dao = new homekitDAO();
-				   ArrayList<homekitDTO> homekitList = dao.showHomeKit();
-               		
-				   for (int i=0; i < homekitList.size(); i++) { %>
-					<div class="col-md-4">
-						<a href="<%=homekitList.get(i).getKit_img() %>" class="img-pop-up">
-							<div class="single-gallery-image"
-								style="background: url('<%=homekitList.get(i).getKit_img() %>'); background-size: contain; background-repeat: no-repeat;"></div>
-						</a>
-						<div style="padding-top: 20px;">
-							<span><strong style="font-size: 20px;"><%=homekitList.get(i).getKit_name() %></strong></span>
-							<div class="switch-wrap d-flex justify-content-between">
-								<p>0<%=i+1 %>. <%=homekitList.get(i).getKit_style() %></p>
-								<p>¼±ÅÃÇÏ±â ¡æ</p>
-								<div class="primary-checkbox">
-									<input type="checkbox" id="default-checkbox"> <label
-										for="default-checkbox"></label>
+<<<<<<< HEAD
+ 
+=======
+	<!-- ìˆ˜ì •: ì „ë¬¸ê°€ ì¶”ì²œ ëª¨ë“œ íŽ˜ì´ì§€ begin -->
+	<!-- banner part start-->
+	<section class="breadcrumb breadcrumb_bg" style="height: 324px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb_iner">
+						<div class="breadcrumb_iner_item text-center">
+							<h2>professional mode</h2>
+							<p style="padding-bottom: 80px;">ì¸í…Œë¦¬ì–´ê°€ ìµìˆ™í•œ ë‹¹ì‹ ì„ ìœ„í•œ ì¶”ì²œ ëª¨ë“œìž…ë‹ˆë‹¤.</p>
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
+
+<<<<<<< HEAD
+	
+=======
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- banner part start-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!-- íƒœê·¸ì¶”ì²œë¶€ë¶„ begin -->
+	<!-- booking part start-->
+	<section class="booking_part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="booking_menu">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">			
+							<li class="nav-item"><a class="nav-link active"
+								id="hotel-tab" data-toggle="tab" href="#hotel" role="tab"
+								aria-controls="hotel" aria-selected="true">ì¸í…Œë¦¬ì–´ ì¶”ì²œì„ ìœ„í•´ ì•„ëž˜ì˜
+									íƒœê·¸ë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.</a></li>
+						</ul>
+						<!-- í”„ë¡œê·¸ë ˆìŠ¤ ë°” -->
+							<!-- <p>ì¶”ì²œ ì§„í–‰ë„</p>
+							<div class="progress" style="margin-top: 2px">
+								<div class="progress-bar" role="progressbar" style="width: 50%;"
+									aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+							</div> -->
+						<!------------->
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="booking_content">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="hotel" role="tabpanel"
+								aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
+								<div class="booking_form">
+									<form action="#">
+										<div class="form-row">
+											<div class="form_colum">
+												<select class="nc_select">
+													<option selected>ì¸í…Œë¦¬ì–´ ìŠ¤íƒ€ì¼</option>
+													<option value="1">ëª¨ë˜</option>
+													<option value="2">ë‚´ì¶”ëŸ´</option>
+													<option value="3">ë¶ìœ ëŸ½</option>
+													<option value="4">ë¹ˆí‹°ì§€&ë ˆíŠ¸ë¡œ</option>
+													<option value="5">ìœ ë‹ˆí¬&ë¯¹ìŠ¤ë§¤ì¹˜</option>
+													<option value="6">í´ëž˜ì‹&ì•¤í‹±</option>
+													<option value="7">í”„ë¡œë°©ìŠ¤&ë¡œë§¨í‹±</option>
+												</select>
+											</div>
+											<div class="form_colum">
+												<select class="nc_select">
+													<option selected>ë°°ê²½ ìƒ‰ìƒ</option>
+													<option value="1">í°ìƒ‰</option>
+													<option value="2">ê°ˆìƒ‰</option>
+													<option value="3">íšŒìƒ‰</option>
+													<option value="4">ê²€ì€ìƒ‰</option>
+													<option value="5">ë¬´ì±„ìƒ‰</option>
+													<option value="6">ë¹„ë¹„ë“œì»¬ëŸ¬</option>
+													<option value="7">ë¹›ë°”ëžœìƒ‰</option>
+													<option value="8">ì–´ë‘ìš´ìƒ‰</option>
+													<option value="9">ìžì—°ì˜ìƒ‰</option>
+													<option value="10">ì°¨ë¶„í•œìƒ‰</option>
+													<option value="11">ì›ìƒ‰</option>
+													<option value="12">ë‚˜ë¬´ìƒ‰</option>
+													<option value="13">í¬ë¦¼ìƒ‰</option>
+													<option value="14">íŒŒìŠ¤í…”</option>
+													<option value="15">ë² ì´ì§€</option>
+												</select>
+											</div>
+											<div class="form_colum" style="margin-right: 290px">
+												<select class="nc_select">
+													<option selected>ì†Œí’ˆ ìƒ‰ìƒ</option>
+													<option value="1">í°ìƒ‰</option>
+													<option value="2">ê°ˆìƒ‰</option>
+													<option value="3">íšŒìƒ‰</option>
+													<option value="4">ê²€ì€ìƒ‰</option>
+													<option value="5">ë¬´ì±„ìƒ‰</option>
+													<option value="6">ë¹„ë¹„ë“œì»¬ëŸ¬</option>
+													<option value="7">ë¹›ë°”ëžœìƒ‰</option>
+													<option value="8">ì–´ë‘ìš´ìƒ‰</option>
+													<option value="9">ìžì—°ì˜ìƒ‰</option>
+													<option value="10">ì°¨ë¶„í•œìƒ‰</option>
+													<option value="11">ì›ìƒ‰</option>
+													<option value="12">ë‚˜ë¬´ìƒ‰</option>
+													<option value="13">í¬ë¦¼ìƒ‰</option>
+													<option value="14">íŒŒìŠ¤í…”</option>
+													<option value="15">ë² ì´ì§€</option>
+												</select>
+											</div>
+											<div class="form_btn">
+												<a href="result.jsp" class="btn_1">ì¶”ì²œ ì‹œìž‘</a>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-					<% }
-               
-               %>
-		<!-- ¹Ýº¹¹®ÀÌ ³¡³ª´Â ºÎºÐ -->
-					 
-	 <section class="best_services section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section_tittle text-center">
-                        <h2>ÀÎÅ×¸®¾î ÆòÁ¡</h2>
-                        <p>¼±È£ÇÏ´Â ¼ø¼­´ë·Î ÆòÁ¡À» ¸Å°ÜÁÖ¼¼¿ä</p><hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                        
-                        <p>¹Ì´Ï¸Ö&½ÉÇÃ</p><br>
-                        
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <a href="#" ><img src="img/homepage/28.jpg" alt=""></a>
-                       
-                        <p>ÇÁ·»Ã÷&ÇÁ·Î¹æ½º</p><br>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <a href="#" ><img src="img/homepage/30.jpg" alt=""></a>
-                        
-                        <p>ºóÆ¼Áö&·¹Æ®·Î</p><br>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                      
-                        <p>¹Ì´Ï¸Ö&½ÉÇÃ</p><br>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--::industries end::-->
-					<!-- ¹Ýº¹¹®ÀÌ ½ÃÀÛµÇ´Â ºÎºÐ -->
-				
-				
 				</div>
 			</div>
 		</div>
-		<a href="result.jsp" class="btn_1"
-			style="margin-left: 650px; margin-top: 70px;">¼±ÅÃ¿Ï·á</a>
+	</section>
+	<!-- Header part end-->
+	<!-- íƒœê·¸ì¶”ì²œë¶€ë¶„ end -->
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
+
+<<<<<<< HEAD
+	
+=======
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--::industries start::-->
+	<section class="best_services section_padding">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6">
+					<div class="section_tittle text-center">
+						<h2>ì—°ê´€ëœ í…Œë§ˆ</h2>
+						<p>ì„ í˜¸í•˜ëŠ” í…Œë§ˆì™€ ë¹„ìŠ·í•œ í…Œë§ˆ ë”ë³´ê¸°</p>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="single_ihotel_list">
+						<a href="#"><img src="img/homepage/27.jpg" alt=""></a>
+						<h3>ì˜¨ì „ížˆ ì·¨í–¥ëŒ€ë¡œ ê¾¸ëª„ë”ë‹ˆ ë¨¸ë¬´ëŠ” ë‚´ë‚´ ë§ˆìŒì— ë“œëŠ” ì§‘</h3>
+						<p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+						<br> <span>í™ˆí‚¤íŠ¸ ê°€ê²© = 5ë§Œì›</span><br>
+						<hr>
+						<a href="#" class="genric-btn info circle">í™ˆí‚¤íŠ¸ êµ¬ê²½í•˜ê¸°</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="single_ihotel_list">
+						<a href="#"><img src="img/homepage/28.jpg" alt=""></a>
+						<h3>í˜¸í…”ë¦¬ì¡°íŠ¸ í’ìœ¼ë¡œ ì›ì—†ì´ ê¾¸ë¯¼ ë“œë¦¼í•˜ìš°ìŠ¤</h3>
+						<p>í”„ë Œì¸ &í”„ë¡œë°©ìŠ¤</p>
+						<br> <span>í™ˆí‚¤íŠ¸ ê°€ê²© = 5ë§Œì›</span><br>
+						<hr>
+						<a href="#" class="genric-btn info circle">í™ˆí‚¤íŠ¸ êµ¬ê²½í•˜ê¸°</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="single_ihotel_list">
+						<a href="#"><img src="img/homepage/30.jpg" alt=""></a>
+						<h3>ê¸€ì”¨ë¥¼ ì“°ëŠ” ë‚˜, ê³ ì–‘ì´ ë‘˜ ê·¸ë¦¬ê³  11í‰ ìš°ë¦¬ ì§‘</h3>
+						<p>ë¹ˆí‹°ì§€&ë ˆíŠ¸ë¡œ</p>
+						<br> <span>í™ˆí‚¤íŠ¸ ê°€ê²© = 5ë§Œì›</span><br>
+						<hr>
+						<a href="#" class="genric-btn info circle">í™ˆí‚¤íŠ¸ êµ¬ê²½í•˜ê¸°</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="single_ihotel_list">
+						<a href="#"><img src="img/homepage/27.jpg" alt=""></a>
+						<h3>ì˜¨ì „ížˆ ì·¨í–¥ëŒ€ë¡œ ê¾¸ëª„ë”ë‹ˆ ë¨¸ë¬´ëŠ” ë‚´ë‚´ ë§ˆìŒì— ë“œëŠ” ì§‘</h3>
+						<p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+						<br> <span>í™ˆí‚¤íŠ¸ ê°€ê²© = 5ë§Œì›</span><br>
+						<hr>
+						<a href="#" class="genric-btn info circle">í™ˆí‚¤íŠ¸ êµ¬ê²½í•˜ê¸°</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!--::industries end::-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
+<<<<<<< HEAD
+	
+=======
 	<!-- footer part start-->
-	<footer class="footer-area" style="padding-top: 0px;">
-		<div class="container" style="padding-bottom: 0px;">
-			<div class="row justify-content-between" style="padding-top: 80px;">
-				<div class="col-sm-6 col-md-5">
-					<div class="single-footer-widget">
-						<h4>(ÁÖ)¹æ±¸¼® ÀÎÅ×¸®¾î¸¦ ¸¸µç »ç¶÷µé</h4>
-						<ul>
-							<li><a href="#">¿À¼öºó, ÆÀÀå</a></li>
-							<li><a href="#">ÀÓÁöÇý, ÆÀ¿ø</a></li>
-							<li><a href="#">ÀÌÁÖ¿µ, ÆÀ¿ø</a></li>
-							<li><a href="#">¹ÚÇÏ¿µ, ÆÀ¿ø</a></li>
-							<li><a href="#">±è¼ÒÈñ, ÆÀ¿ø</a></li>
-							<li><a href="#">°­Áö¾Æ, ÆÀ¿ø</a></li>
-						</ul>
+	<footer class="footer-area">
 
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="single-footer-widget">
-						<h4>Send us Email</h4>
-						<div class="form-wrap" id="mc_embed_signup">
-							<form target="_blank"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="form-inline">
-								<input class="form-control" name="EMAIL"
-									placeholder="Your Email Address"
-									onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Your Email Address '" required=""
-									type="email">
-								<button class="click-btn btn btn-default text-uppercase">
-									<i class="far fa-paper-plane"></i>
-								</button>
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a"
-										tabindex="-1" value="" type="text">
-								</div>
 
-								<div class="info"></div>
-							</form>
-						</div>
-						<p>±Ã±ÝÇÑ Á¡Àº ÀÌ¸ÞÀÏ·Î ¹®ÀÇ¹Ù¶ø´Ï´Ù.</p>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="single-footer-widget footer_icon">
-						<h4>Contact Us</h4>
-						<p>±¤ÁÖ±¤¿ª½Ã ³²±¸ ¼Û¾Ï·Î60 ±¤ÁÖCGI¼¾ÅÍ 2Ãþ 062-655-3509</p>
-						<span>admin@admin.com</span>
-					</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="copyright_part_text text-center">
+					<p class="footer-text m-0">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script>
+						All rights reserved | This template is made with <i
+							class="ti-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="copyright_part_text text-center"
-						style="padding-top: 0px; padding-bottom: 0px; margin-top: 50px;">
-						<p class="footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script>
-							All rights reserved | This template is made with <i
-								class="ti-heart" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</footer>
 	<!-- footer part end-->
- 
-     <!-- jquery plugins here-->
-     <script src="js/jquery-1.12.1.min.js"></script>
-     <!-- popper js -->
-     <script src="js/popper.min.js"></script>
-     <!-- bootstrap js -->
-     <script src="js/bootstrap.min.js"></script>
-     <!-- magnific js -->
-     <script src="js/jquery.magnific-popup.js"></script>
-     <!-- swiper js -->
-     <script src="js/owl.carousel.min.js"></script>
-     <!-- masonry js -->
-     <script src="js/masonry.pkgd.js"></script>
-     <!-- masonry js -->
-     <script src="js/jquery.nice-select.min.js"></script>
-     <script src="js/gijgo.min.js"></script>
-     <!-- contact js -->
-     <script src="js/jquery.ajaxchimp.min.js"></script>
-     <script src="js/jquery.form.js"></script>
-     <script src="js/jquery.validate.min.js"></script>
-     <script src="js/mail-script.js"></script>
-     <script src="js/contact.js"></script>
-     <!-- custom js -->
-     <script src="js/custom.js"></script>
- </body>
- 
- </html>
+
+	<!-- jquery plugins here-->
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<!-- popper js -->
+	<script src="js/popper.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- magnific js -->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- swiper js -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- masonry js -->
+	<script src="js/masonry.pkgd.js"></script>
+	<!-- masonry js -->
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/gijgo.min.js"></script>
+	<!-- contact js -->
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/contact.js"></script>
+	<!-- custom js -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git

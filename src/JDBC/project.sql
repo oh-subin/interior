@@ -12,6 +12,9 @@ INSERT INTO MEMBER values('이주영', 'ken1204@naver.com', '1234567', '광주광역시 
 
 테이블 조회(멤버)
 SELECT * FROM MEMBER
+
+행 삭제(멤버)
+DELETE FROM MEMBER WHERE TEL='123'
 ----------------------------------------------------------------
 홈키트 테이블 생성
 CREATE TABLE HOMEKIT (
