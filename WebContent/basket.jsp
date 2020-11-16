@@ -154,6 +154,7 @@
 						<%
 								cartDAO dao = new cartDAO();
 								ArrayList<cartDTO> cartList = dao.showCart(email);
+								int sum=0;
 
 								for (int i = 0; i < cartList.size(); i++) {
 									out.println("<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>");
@@ -164,6 +165,7 @@
 									out.println("<div class='choice'><a href='CartDelete?cart_name="+ cartList.get(i).getCart_name() +"'><i class='fas fa-backspace' style='color: gray;'></i></a></div>");
 									out.println("</div>");
 									
+									sum = cartList.get(i).getCart_price() + sum;
 								}
 						%>
 						</form>
@@ -181,8 +183,8 @@
 		<dl>
 			<strong><span style="margin-left: 550px; font-size: 30px;">총
 					주문금액</span></strong>
-			<span style="margin-left: 100px; font-size: 20px;">~~~원 + 배송비
-				2500원 = ~~~원</span>
+			<span style="margin-left: 100px; font-size: 20px;"><%=sum %>원 + 배송비
+				2500원 = <%=sum+2500%>원</span>
 		</dl>
 		<hr>
 	</div>
