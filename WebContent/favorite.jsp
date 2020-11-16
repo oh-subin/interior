@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="css/slick.css">
 <!-- style CSS -->
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -51,7 +52,7 @@
 						<nav
 							class="navbar navbar-expand-lg navbar-light justify-content-between">
 							<a class="navbar-brand" href="main.jsp"> <img
-								src="img/homepage/logo.JPG" alt="logo" style="width: 205px;">
+								src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;">
 							</a>
 							<button class="navbar-toggler" type="button"
 								data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -144,6 +145,16 @@
 			<div class="row justify-content-center">
 				<div class="col-xl-6">
 					<div class="section_tittle text-center">
+						<!-- prograss bar begin -->
+						 <div style="width: 600px;height: 70px;">
+						 	<div style="width: 600px;height: 20px;margin-top: 90px;">
+								<b class="prograss_text">추천 진행도 <b style="padding-left: 440px;">50%</b></b>
+							</div>
+						    <div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
+						  		<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						 </div>
+						 <!-- prograss bar end -->
 						<h2>인테리어 테마</h2>
 						<p>이미지를 클릭하시면 이미지를 확대해서 볼 수 있습니다.</p>
 					</div>
@@ -184,8 +195,7 @@
 								style="background: url(img/homepage/310.jpg); background-size: contain; background-repeat: no-repeat;""></div>
 						</a>
 						<div style="padding-top: 20px;">
-							<span><strong style="font-size: 20px;">집에서도 휴양지에
-									온 것처럼ㅣ라탄&빈티지 무드</strong></span>
+							<span><strong style="font-size: 20px;">집에서도 휴양지에 온 것처럼ㅣ라탄&빈티지 무드</strong></span>
 							<div class="switch-wrap d-flex justify-content-between">
 								<p>01. 빈티지&레트로</p>
 								<p>선택하기 →</p>

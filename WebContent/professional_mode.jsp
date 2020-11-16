@@ -1,9 +1,12 @@
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+
 <!doctype html>
 <html lang="en">
 
 <head>
+
 <!-- Required meta tags -->
 <meta charset="EUC-KR">
 <meta name="viewport"
@@ -37,6 +40,7 @@
 	<%
 		String email = (String)session.getAttribute("email");	
 	%>
+
 	<!--::header part start::-->
 	<header class="main_menu">
 		<div class="main_menu_iner">
@@ -343,3 +347,4 @@
 </body>
 
 </html>
+

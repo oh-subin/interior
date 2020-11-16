@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="css/slick.css">
 <!-- style CSS -->
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -49,7 +50,7 @@
 						<nav
 							class="navbar navbar-expand-lg navbar-light justify-content-between">
 							<a class="navbar-brand" href="main.jsp"> <img
-								src="img/homepage/logo.JPG" alt="logo" style="width: 205px;">
+								src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;">
 							</a>
 							<button class="navbar-toggler" type="button"
 								data-toggle="collapse" data-target="#navbarSupportedContent"
