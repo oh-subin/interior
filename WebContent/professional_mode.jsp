@@ -1,16 +1,12 @@
-<<<<<<< HEAD
 
-=======
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
+
 <!doctype html>
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
-        
-=======
+
 <!-- Required meta tags -->
 <meta charset="EUC-KR">
 <meta name="viewport"
@@ -114,11 +110,7 @@
 	</header>
 	<!-- 수정: 상위메뉴 이름 지정 end -->
 	<!-- Header part end-->
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
-<<<<<<< HEAD
- 
-=======
 	<!-- 수정: 전문가 추천 모드 페이지 begin -->
 	<!-- banner part start-->
 	<section class="breadcrumb breadcrumb_bg" style="height: 324px;">
@@ -129,11 +121,7 @@
 						<div class="breadcrumb_iner_item text-center">
 							<h2>professional mode</h2>
 							<p style="padding-bottom: 80px;">인테리어가 익숙한 당신을 위한 추천 모드입니다.</p>
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
-<<<<<<< HEAD
-	
-=======
 						</div>
 					</div>
 				</div>
@@ -243,11 +231,7 @@
 	</section>
 	<!-- Header part end-->
 	<!-- 태그추천부분 end -->
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
-<<<<<<< HEAD
-	
-=======
 	<br>
 	<br>
 	<br>
@@ -315,11 +299,7 @@
 	<br>
 	<br>
 	<br>
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 
-<<<<<<< HEAD
-	
-=======
 	<!-- footer part start-->
 	<footer class="footer-area">
 
@@ -369,4 +349,4 @@
 </body>
 
 </html>
->>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
+
