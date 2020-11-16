@@ -64,10 +64,10 @@
                                             <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">전문가 추천</a>
+                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Beginner_Mode.jsp">초보자 추천</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" id="navbarDropdown"
@@ -76,8 +76,8 @@
                                                 커뮤니티
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
-                                                <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
+                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
+                                                <a class="dropdown-item" href="#">체험형 키트</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
@@ -110,23 +110,6 @@
  <!-- Header part end-->
     
         <!-- 수정: 전문가 추천모드에서 이동할 추천결과 페이지 begin -->
-        <!-- breadcrumb start-->
-        <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb_iner">
-                            <div class="breadcrumb_iner_item text-center">
-                                <h2>Detail Page</h2>
-                                <p style="padding-bottom: 80px;">홈키트의 상세정보를 확인하세요</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- breadcrumb start-->
-    
      <!-- about us css start-->
      <section class="about_us section_padding"  style="margin-bottom: 500px;margin-top: 50px;">
         <div class="container">

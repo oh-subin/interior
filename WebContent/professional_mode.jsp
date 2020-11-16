@@ -42,45 +42,47 @@
 	%>
 
 	<!--::header part start::-->
-	<header class="main_menu">
-		<div class="main_menu_iner">
-			<div class="container">
-				<div class="row align-items-center ">
-					<div class="col-lg-12">
-						<nav
-							class="navbar navbar-expand-lg navbar-light justify-content-between">
-							<a class="navbar-brand" href="main.jsp"> <img
-								src="img/homepage/logo.JPG" alt="logo" style="width: 205px;">
-							</a>
-							<button class="navbar-toggler" type="button"
-								data-toggle="collapse" data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent" aria-expanded="false"
-								aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<!-- 수정: 상위메뉴 이름 지정 begin -->
-							<div
-								class="collapse navbar-collapse main-menu-item justify-content-center"
-								id="navbarSupportedContent">
-								<ul class="navbar-nav">
-									<li class="nav-item"><a class="nav-link" href="about.jsp">소개</a>
-									</li>
-									<li class="nav-item"><a class="nav-link"
-										href="professional_mode.jsp">전문가 추천</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="Beginner_Mode.jsp">초보자 추천</a></li>
-									<li class="nav-item dropdown"><a
-										class="nav-link dropdown-toggle" id="navbarDropdown"
-										role="button" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false"> 커뮤니티 </a>
-										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트
-												판매</a> <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
-										</div></li>
-									<li class="nav-item"><a class="nav-link" href="QA.jsp">Q&A</a>
-									</li>
-								</ul>
-							</div>
+        <header class="main_menu">
+            <div class="main_menu_iner">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+    							<!-- 수정: 상위메뉴 이름 지정 begin -->
+                                <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                    id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                    	<li class="nav-item">
+                                            <a class="nav-link" href="about.jsp">소개</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                커뮤니티
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
+                                                <a class="dropdown-item" href="#">체험형 키트</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                        </li>
+                                    </ul>
+                                </div>
 							<%if(email == null){ %>
 							<a href="login.jsp"
 								style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
@@ -104,47 +106,64 @@
 					</div>
 				</div>
 			</div>
+			<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.jbMenu' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.jbMenu' ).addClass( 'jbFixed' );
+          }
+          else {
+            $( '.jbMenu' ).removeClass( 'jbFixed' );
+          }
+        });
+      } );
+    </script>
+    
+    <div class="jbMenu" style="height: 100px;">
+      <p>
+        <div style="width: 600px;margin-left: 400px;height: 20px;">
+ 			<div style="width: 600px;height: 20px;">
+			<b class="prograss_text">추천 진행도<b style="padding-left: 440px;">0%</b></b>
+			</div>
+    		<div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+ 		</div>
+      </p>
+    </div>
+    
+   <!-- prograss bar end -->
 		</div>
 	</header>
 	<!-- 수정: 상위메뉴 이름 지정 end -->
 	<!-- Header part end-->
 
-	<!-- 수정: 전문가 추천 모드 페이지 begin -->
-	<!-- banner part start-->
-	<section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb_iner">
-						<div class="breadcrumb_iner_item text-center">
-							<h2>professional mode</h2>
-							<p style="padding-bottom: 80px;">인테리어가 익숙한 당신을 위한 추천 모드입니다.</p>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- banner part start-->
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+   
+	<!-- 수정: 전문가 추천 모드 페이지 begin -->
+  <!-- prograss bar 100% begin -->
+ <!-- <div style="width: 600px;margin-left: 400px;height: 70px;">
+ 	<div style="width: 600px;height: 20px;margin-top: 90px;">
+		<b class="prograss_text">��õ ���൵ <b style="padding-left: 440px;">100%</b></b>
+	</div>
+    <div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
+  		<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+ </div> -->
+ <!-- prograss bar end  -->
+	
 	<!-- 태그추천부분 begin -->
 	<!-- booking part start-->
-	<section class="booking_part">
+	<section class="booking_part" style="margin-top: 70px;height: 400px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="booking_menu">
-						<ul class="nav nav-tabs" id="myTab" role="tablist">			
-							<li class="nav-item"><a class="nav-link active"
-								id="hotel-tab" data-toggle="tab" href="#hotel" role="tab"
-								aria-controls="hotel" aria-selected="true">인테리어 추천을 위해 아래의
-									태그를 선택해주세요.</a></li>
-						</ul>
+						<h2>1. 태그 선택</h2><br>
+						<p>인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
+						
 						<!-- 프로그레스 바 -->
 							<!-- <p>추천 진행도</p>
 							<div class="progress" style="margin-top: 2px">
@@ -215,7 +234,7 @@
 												</select>
 											</div>
 											<div class="form_btn">
-												<a href="result.jsp" class="btn_1">추천 시작</a>
+												<a href="result.jsp" class="btn_1">1차 추천</a>
 											</div>
 										</div>
 									</form>
@@ -235,63 +254,65 @@
 	<br>
 	<br>
 	<br>
+	
 	<!--::industries start::-->
-	<section class="best_services section_padding">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-6">
-					<div class="section_tittle text-center">
-						<h2>연관된 테마</h2>
-						<p>선호하는 테마와 비슷한 테마 더보기</p>
-						<hr>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/27.jpg" alt=""></a>
-						<h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
-						<p>미니멀&심플</p>
-						<br> <span>홈키트 가격 = 5만원</span><br>
-						<hr>
-						<a href="#" class="genric-btn info circle">홈키트 구경하기</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/28.jpg" alt=""></a>
-						<h3>호텔리조트 풍으로 원없이 꾸민 드림하우스</h3>
-						<p>프렌츠&프로방스</p>
-						<br> <span>홈키트 가격 = 5만원</span><br>
-						<hr>
-						<a href="#" class="genric-btn info circle">홈키트 구경하기</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/30.jpg" alt=""></a>
-						<h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
-						<p>빈티지&레트로</p>
-						<br> <span>홈키트 가격 = 5만원</span><br>
-						<hr>
-						<a href="#" class="genric-btn info circle">홈키트 구경하기</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/27.jpg" alt=""></a>
-						<h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
-						<p>미니멀&심플</p>
-						<br> <span>홈키트 가격 = 5만원</span><br>
-						<hr>
-						<a href="#" class="genric-btn info circle">홈키트 구경하기</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--::industries end::-->
+    <section class="hotel_list section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6" >
+                    <div class="section_tittle text-center">
+                        <h2>2. 평점 매기기</h2>
+						<p>사진을 클릭하여 평점을 1~5까지 입력해주세요 </p>
+                    </div>
+                </div>
+            </div>
+            <form>
+            <div class="section-top-border" style="padding-top: 0px;">
+               <div class="row gallery-item">
+                   
+                   <div class="col-md-6">
+                       <a href="img/homepage/536.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+                           
+                           <div class="switch-wrap d-flex justify-content-between">
+                              
+                     </div>
+                           </div>
+                   </div>
+                   <div class="col-md-6">
+                       <a href="img/homepage/612.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+                           
+                            <div class="switch-wrap d-flex justify-content-between">
+                             
+                     </div>
+                           </div>
+                   </div>
+                    <div class="col-md-6">
+                       <a href="img/homepage/536.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+                         
+                           <div class="switch-wrap d-flex justify-content-between">
+                               
+                     </div>
+                           </div>
+                   </div>
+                   <div class="col-md-6">
+                       <a href="img/homepage/612.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+                          
+                            <div class="switch-wrap d-flex justify-content-between">
+                               
+                     </div>
+                           </div>
+                   </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
+        </form>
+       </section>
 	<br>
 	<br>
 	<br>

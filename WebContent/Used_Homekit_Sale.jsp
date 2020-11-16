@@ -58,10 +58,10 @@
                                             <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">전문가 추천</a>
+                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Beginner_Mode.jsp">초보자 추천</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" id="navbarDropdown"
@@ -70,8 +70,8 @@
                                                 커뮤니티
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
-                                                <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
+                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
+                                                <a class="dropdown-item" href="#">체험형 키트</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
@@ -103,22 +103,6 @@
 <!-- 수정: 상위메뉴 이름 지정 end -->
 <!-- Header part end-->
  
-    <!-- breadcrumb start-->
-    <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item text-center">
-                            <h2>Used Homekit Sale</h2>
-                            <p style="padding-bottom: 80px;">구매했던 키트를 자유롭게 거래하세요!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- breadcrumb start-->
 <br><br><br>
     <!--================Blog Area =================-->
     <!-- 수정: 중고키트 판매하는 칸 begin -->
@@ -130,7 +114,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <h1>첫번째 집들이</h1><hr>
-                                <img class="card-img rounded-0" src="img/homepage/20.jpg" alt="">
+                                <img class="card-img rounded-0" src="img/homepage/23.jpg" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
