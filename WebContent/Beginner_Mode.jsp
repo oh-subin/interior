@@ -83,16 +83,18 @@
 	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
-	                                    <a class="nav-link dropdown-toggle btn_1 d-none d-lg-block" id="navbarDropdown"  role="button" 
-	                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=email %></a>
-	                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                                          <a class="dropdown-item" href="update.jsp">정보수정</a>
-		                                      <a class="dropdown-item" href="LogoutService">로그아웃</a>
-		                                      <a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
-	                                        </div>
-	                                </div>
-	                                <a href="basket.jsp" class="btn_1 d-none d-lg-block" style="margin-left: 5px;">장바구니</a>
-                                <%} %>
+								<a class="nav-link dropdown-toggle"
+									id="navbarDropdown" role="button" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"><%=email %></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
+										class="dropdown-item" href="LogoutService">로그아웃</a> <a
+										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+								</div>
+							</div>
+							<a href="basket.jsp" 
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+							<%} %>
                             </nav>
                         </div>
                     </div>
@@ -109,7 +111,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
-                            <h2 style="font-family: Open Sans;">Beginner Mode</h2>
+                            <h2>Beginner Mode</h2>
                             <p style="padding-bottom: 80px;">인테리어가 처음인 당신을 위한 추천 모드입니다.</p>
                         </div>
                     </div>
