@@ -153,7 +153,7 @@
 						<form action="DeleteCart" method="get">
 						<%
 								cartDAO dao = new cartDAO();
-								ArrayList<cartDTO> cartList = dao.showCart();
+								ArrayList<cartDTO> cartList = dao.showCart(email);
 
 								for (int i = 0; i < cartList.size(); i++) {
 									out.println("<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>");
