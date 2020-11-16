@@ -40,9 +40,7 @@
 	<%
 		String email = (String)session.getAttribute("email");	
 	%>
-<<<<<<< HEAD
-        
-=======
+
 	<!--::header part start::-->
 	<header class="main_menu">
 		<div class="main_menu_iner">
