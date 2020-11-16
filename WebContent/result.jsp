@@ -43,45 +43,47 @@
       String email = (String)session.getAttribute("email");   
    %>
 	<!--::header part start::-->
-	<header class="main_menu">
-		<div class="main_menu_iner">
-			<div class="container">
-				<div class="row align-items-center ">
-					<div class="col-lg-12">
-						<nav
-							class="navbar navbar-expand-lg navbar-light justify-content-between">
-							<a class="navbar-brand" href="main.jsp"> <img
-								src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;">
-							</a>
-							<button class="navbar-toggler" type="button"
-								data-toggle="collapse" data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent" aria-expanded="false"
-								aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<!-- 수정: 상위메뉴 이름 지정 begin -->
-							<div
-								class="collapse navbar-collapse main-menu-item justify-content-center"
-								id="navbarSupportedContent">
-								<ul class="navbar-nav">
-									<li class="nav-item"><a class="nav-link" href="about.jsp">소개</a>
-									</li>
-									<li class="nav-item"><a class="nav-link"
-										href="professional_mode.jsp">전문가 추천</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="Beginner_Mode.jsp">초보자 추천</a></li>
-									<li class="nav-item dropdown"><a
-										class="nav-link dropdown-toggle" id="navbarDropdown"
-										role="button" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false"> 커뮤니티 </a>
-										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트
-												판매</a> <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
-										</div></li>
-									<li class="nav-item"><a class="nav-link" href="QA.jsp">Q&A</a>
-									</li>
-								</ul>
-							</div>
+        <header class="main_menu">
+            <div class="main_menu_iner">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+    							<!-- 수정: 상위메뉴 이름 지정 begin -->
+                                <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                    id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                    	<li class="nav-item">
+                                            <a class="nav-link" href="about.jsp">소개</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                커뮤니티
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
+                                                <a class="dropdown-item" href="#">체험형 키트</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                        </li>
+                                    </ul>
+                                </div>
 							<%if(email == null){ %>
 							<a href="login.jsp"
 								style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
@@ -131,9 +133,11 @@
 	<!-- about us css start-->
 	<section class="about_us section_padding"
 		style="margin-bottom: 100px; margin-top: 0px;">
+		
 		<div class="container">
-			<div class="row align-items-center" style="height: 370px;">
+			<div class="row align-items-center" style="height: 200px;">
 				<div class="col-lg-6">
+				<h4>테마 추천 결과</h4><br>
 					<div class="about_img">
 						<img src="img/homepage/514.jpg" alt="#"
 							style="height: 400px; width: 500px;"><br>
@@ -142,8 +146,8 @@
 				</div>
 
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
-					<div class="about_text" style="width: 500px; margin-top: 10px;">
-						<h5>테마 추천 결과</h5>
+					<div class="about_text" style="width: 500px; margin-top: 50px;">
+						
 						<h3 style="font-size: 30px;">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</h3>
 						<br>
 						<div class="rating">

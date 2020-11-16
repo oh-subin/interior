@@ -58,10 +58,10 @@
                                             <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">전문가 추천</a>
+                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Beginner_Mode.jsp">초보자 추천</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" id="navbarDropdown"
@@ -70,8 +70,8 @@
                                                 커뮤니티
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
-                                                <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
+                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
+                                                <a class="dropdown-item" href="#">체험형 키트</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
