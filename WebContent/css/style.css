@@ -10,14 +10,19 @@
 /**************** extend css start ****************/
 /**************** common css start ****************/
 /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
+=======
 @font-face {
      font-family: 'S-CoreDream-2ExtraLight';
      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
      font-weight: normal;
      font-style: normal;
 }
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 body {
+<<<<<<< HEAD
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -156,13 +161,21 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: #002C2F;
+<<<<<<< HEAD
+ 
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 }
 
 /* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
 p {
   color: #B2A59F;
+<<<<<<< HEAD
+ 
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
   line-height: 28px;
   font-size: 16px;
   margin-bottom: 0px;
@@ -575,7 +588,11 @@ ul {
   line-height: 46px;
   padding-left: 30px;
   margin-top: 35px;
+<<<<<<< HEAD
+  
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 }
 
 /* line 95, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_button.scss */
@@ -2255,7 +2272,11 @@ ul {
   color: #46555C;
   font-size: 16px;
   padding: 38px 22px;
+<<<<<<< HEAD
+  
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
   text-transform: capitalize;
 }
 
@@ -2554,7 +2575,7 @@ ul {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_booking.scss */
 .booking_part {
   margin-top: -80px;
-  z-index: 9;
+  z-index: -1;
   position: relative;
 }
 
@@ -2953,7 +2974,11 @@ ul {
 /* line 35, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_event_part.scss */
 .event_part .rating span {
   color: #848484;
+<<<<<<< HEAD
+  
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
   font-size: 16px;
 }
 
@@ -3481,7 +3506,11 @@ ul {
 /* line 26, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_team.scss */
 .single_team_member .blog_item_date h3 {
   font-size: 24px;
+<<<<<<< HEAD
+  
+=======
   font-family: 'S-CoreDream-2ExtraLight';
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
   color: #fff;
   font-weight: 700;
 }
@@ -5282,4 +5311,30 @@ h6 {
   font-size-adjust: 1px;
 }
 
+/* prograss bar 추가 */
+.progress-bar{
+	background-color:rgb(168, 167, 167);
+	z-index: -9999 !important;
+}
 
+.jbMenu {
+        text-align: center;
+        background-color: white;
+        padding: 10px 0px;
+        width: 100%;
+       
+        
+      }
+      .jbContent {
+        height: 2000px;
+        background-color: white;
+       
+        
+      }
+      .jbFixed {
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        
+        
+      }
