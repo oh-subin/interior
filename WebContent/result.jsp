@@ -165,7 +165,7 @@
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
 								받기</a> <a href="#" class="genric-btn info radius"
-								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">집들이
+								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">집들
 								가기</a>
 						</div>
 					</div>
