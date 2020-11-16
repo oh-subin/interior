@@ -162,13 +162,13 @@
 									out.println("<div class='country' >" + cartList.get(i).getCart_name() + "</div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_cnt() + "</div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_price() + "원</div>");
-									out.println("<div class='choice'><i class='fas fa-backspace'></i></div>");
+									out.println("<div class='choice'><a href='CartDelete?cart_name="+ cartList.get(i).getCart_name() +"'><i class='fas fa-backspace' style='color: gray;'></i></a></div>");
 									out.println("</div>");
 									
 								}
 						%>
 						</form>
-
+						
 					</div>
 				</div>
 			</div>
