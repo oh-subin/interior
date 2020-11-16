@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="com.DAO.homekitDAO"%>
+<%@ page import="com.DTO.homekitDTO"%>
 <!doctype html>
 <html lang="en">
 
@@ -30,6 +33,8 @@
         <link rel="stylesheet" href="css/slick.css">
         <!-- style CSS -->
         <link rel="stylesheet" href="css/style.css">
+        
+  		
     </head>
     
     <body>
@@ -43,7 +48,7 @@
                     <div class="row align-items-center ">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/logo.JPG" alt="logo" style="width: 205px;"> </a>
+                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -120,16 +125,62 @@
          </div>
      </section>
      <!-- banner part start-->
-     <br><br><br><br><br>
+   
+   <!-- 스크롤 메뉴바 begin -->
+   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.jbMenu' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.jbMenu' ).addClass( 'jbFixed' );
+          }
+          else {
+            $( '.jbMenu' ).removeClass( 'jbFixed' );
+          }
+        });
+      } );
+    </script>
+    
+    <div class="jbMenu" style="height: 180px;">
+      <p>
+        <div style="width: 600px;margin-left: 400px;height: 20px;">
+ 			<div style="width: 600px;height: 20px;margin-top: 110px;">
+			<b class="prograss_text">추천 진행도 <b style="padding-left: 440px;">0%</b></b>
+			</div>
+    		<div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+ 		</div>
+      </p>
+    </div>
+    
+   <!-- 스크롤 메뉴바 end -->
+   
+  <!-- prograss bar 100% begin -->
+ <!-- <div style="width: 600px;margin-left: 400px;height: 70px;">
+ 	<div style="width: 600px;height: 20px;margin-top: 90px;">
+		<b class="prograss_text">추천 진행도 <b style="padding-left: 440px;">100%</b></b>
+	</div>
+    <div class="progress" style="width: 600px;height: 20px;margin-left: 0px;margin-top: 20px;">
+  		<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+ </div> -->
+ <!-- prograss bar end  -->
+     
      <!-- 태그추천부분 begin -->
  <!-- booking part start-->
- <section class="booking_part">
+ <section class="booking_part" style="margin-top: 100px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="booking_menu">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <div>
+	  					<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
                         <li class="nav-item">
+                        
                         <a class="nav-link active" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="true">인테리어 추천을 위해 아래의 태그를 선택해주세요.</a>
                         </li>
                     </ul>
@@ -260,14 +311,41 @@
 <!-- 태그추천부분 end -->
 
  <br><br><br><br><br>
-    <!--::industries start::-->
-    <section class="best_services section_padding">
+		<!-- 반복문이 시작되는 부분 -->
+					<%
+	               homekitDAO dao = new homekitDAO();
+				   ArrayList<homekitDTO> homekitList = dao.showHomeKit();
+               		
+				   for (int i=0; i < homekitList.size(); i++) { %>
+					<div class="col-md-4">
+						<a href="<%=homekitList.get(i).getKit_img() %>" class="img-pop-up">
+							<div class="single-gallery-image"
+								style="background: url('<%=homekitList.get(i).getKit_img() %>'); background-size: contain; background-repeat: no-repeat;"></div>
+						</a>
+						<div style="padding-top: 20px;">
+							<span><strong style="font-size: 20px;"><%=homekitList.get(i).getKit_name() %></strong></span>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>0<%=i+1 %>. <%=homekitList.get(i).getKit_style() %></p>
+								<p>선택하기 →</p>
+								<div class="primary-checkbox">
+									<input type="checkbox" id="default-checkbox"> <label
+										for="default-checkbox"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<% }
+               
+               %>
+		<!-- 반복문이 끝나는 부분 -->
+					 
+	 <section class="best_services section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section_tittle text-center">
-                        <h2>연관된 테마</h2>
-                        <p>선호하는 테마와 비슷한 테마 더보기</p><hr>
+                        <h2>인테리어 평점</h2>
+                        <p>선호하는 순서대로 평점을 매겨주세요</p><hr>
                     </div>
                 </div>
             </div>
@@ -275,116 +353,130 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        
                         <p>미니멀&심플</p><br>
-                        <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        
+                       
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/28.jpg" alt=""></a>
-                        <h3>호텔리조트 풍으로 원없이 꾸민 드림하우스</h3>
+                       
                         <p>프렌츠&프로방스</p><br>
-                        <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/30.jpg" alt=""></a>
-                        <h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
+                        
                         <p>빈티지&레트로</p><br>
-                        <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                      
                         <p>미니멀&심플</p><br>
-                        <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--::industries end::-->
-    <br><br><br><br><br>
+					<!-- 반복문이 시작되는 부분 -->
+				
+				
+				</div>
+			</div>
+		</div>
+		<a href="result.jsp" class="btn_1"
+			style="margin-left: 650px; margin-top: 70px;">선택완료</a>
+	</section>
+	<!--::industries end::-->
 
-    <!-- footer part start-->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-sm-6 col-md-5">
-                    <div class="single-footer-widget">
-                        <h4>(주)방구석 인테리어를 만든 사람들</h4>
-                        <ul>
-                            <li><a href="#">오수빈, 팀장</a></li>
-                            <li><a href="#">임지혜, 팀원</a></li>
-                            <li><a href="#">이주영, 팀원</a></li>
-                            <li><a href="#">박하영, 팀원</a></li>
-                            <li><a href="#">김소희, 팀원</a></li>
-                            <li><a href="#">강지아, 팀원</a></li>
-                        </ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="single-footer-widget">
-                        <h4>Send us Email</h4>
-                        <div class="form-wrap" id="mc_embed_signup">
-                            <form target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="form-inline">
-                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-                                    required="" type="email">
-                                <button class="click-btn btn btn-default text-uppercase"> <i class="far fa-paper-plane"></i>
-                                </button>
-                                <div style="position: absolute; left: -5000px;">
-                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
-                                        type="text">
-                                </div>
+	<!-- footer part start-->
+	<footer class="footer-area" style="padding-top: 0px;">
+		<div class="container" style="padding-bottom: 0px;">
+			<div class="row justify-content-between" style="padding-top: 80px;">
+				<div class="col-sm-6 col-md-5">
+					<div class="single-footer-widget">
+						<h4>(주)방구석 인테리어를 만든 사람들</h4>
+						<ul>
+							<li><a href="#">오수빈, 팀장</a></li>
+							<li><a href="#">임지혜, 팀원</a></li>
+							<li><a href="#">이주영, 팀원</a></li>
+							<li><a href="#">박하영, 팀원</a></li>
+							<li><a href="#">김소희, 팀원</a></li>
+							<li><a href="#">강지아, 팀원</a></li>
+						</ul>
 
-                                <div class="info"></div>
-                            </form>
-                        </div>
-                        <p>궁금한 점은 이메일로 문의바랍니다.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="single-footer-widget footer_icon">
-                        <h4>Contact Us</h4>
-                        <p>광주광역시 남구 송암로60 광주CGI센터 2층 
-                           062-655-3509
-                        </p>
-                        <span>admin@admin.com</span>
-                         <div class="social-icons">
-                             <a href="#"><i class="ti-facebook"></i></a>
-                             <a href="#"><i class="ti-twitter-alt"></i></a>
-                             <a href="#"><i class="ti-pinterest"></i></a>
-                             <a href="#"><i class="ti-instagram"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="container-fluid">
-             <div class="row justify-content-center">
-                 <div class="col-lg-12">
-                     <div class="copyright_part_text text-center">
-                         <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
- <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
-     <!-- footer part end-->
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="single-footer-widget">
+						<h4>Send us Email</h4>
+						<div class="form-wrap" id="mc_embed_signup">
+							<form target="_blank"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="form-inline">
+								<input class="form-control" name="EMAIL"
+									placeholder="Your Email Address"
+									onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Your Email Address '" required=""
+									type="email">
+								<button class="click-btn btn btn-default text-uppercase">
+									<i class="far fa-paper-plane"></i>
+								</button>
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a"
+										tabindex="-1" value="" type="text">
+								</div>
+
+								<div class="info"></div>
+							</form>
+						</div>
+						<p>궁금한 점은 이메일로 문의바랍니다.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="single-footer-widget footer_icon">
+						<h4>Contact Us</h4>
+						<p>광주광역시 남구 송암로60 광주CGI센터 2층 062-655-3509</p>
+						<span>admin@admin.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="copyright_part_text text-center"
+						style="padding-top: 0px; padding-bottom: 0px; margin-top: 50px;">
+						<p class="footer-text m-0">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>
+							All rights reserved | This template is made with <i
+								class="ti-heart" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer part end-->
  
      <!-- jquery plugins here-->
      <script src="js/jquery-1.12.1.min.js"></script>

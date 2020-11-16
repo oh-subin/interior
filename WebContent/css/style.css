@@ -10,8 +10,10 @@
 /**************** extend css start ****************/
 /**************** common css start ****************/
 /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
+
+
+
 body {
-  font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -150,13 +152,13 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: #002C2F;
-  font-family: "Open Sans", sans-serif;
+  font-family:'SCDream3';
 }
 
 /* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
 p {
   color: #B2A59F;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   line-height: 28px;
   font-size: 16px;
   margin-bottom: 0px;
@@ -569,7 +571,7 @@ ul {
   line-height: 46px;
   padding-left: 30px;
   margin-top: 35px;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 /* line 95, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_button.scss */
@@ -2249,7 +2251,7 @@ ul {
   color: #46555C;
   font-size: 16px;
   padding: 38px 22px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   text-transform: capitalize;
 }
 
@@ -2548,7 +2550,7 @@ ul {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_booking.scss */
 .booking_part {
   margin-top: -80px;
-  z-index: 9;
+  z-index: -1;
   position: relative;
 }
 
@@ -2947,7 +2949,7 @@ ul {
 /* line 35, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_event_part.scss */
 .event_part .rating span {
   color: #848484;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 16px;
 }
 
@@ -3475,7 +3477,7 @@ ul {
 /* line 26, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_team.scss */
 .single_team_member .blog_item_date h3 {
   font-size: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   color: #fff;
   font-weight: 700;
 }
@@ -5586,4 +5588,30 @@ h6 {
   font-size-adjust: 1px;
 }
 
+/* prograss bar 추가 */
+.progress-bar{
+	background-color:rgb(168, 167, 167);
+	z-index: -9999 !important;
+}
 
+.jbMenu {
+        text-align: center;
+        background-color: white;
+        padding: 10px 0px;
+        width: 100%;
+       
+        
+      }
+      .jbContent {
+        height: 2000px;
+        background-color: white;
+       
+        
+      }
+      .jbFixed {
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        
+        
+      }

@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="css/style.css">
 <!-- selfmade CSS -->
 <link rel="stylesheet" href="css/selfmade.css">
+
 </head>
 
 <body>
@@ -50,7 +51,7 @@
 						<nav
 							class="navbar navbar-expand-lg navbar-light justify-content-between">
 							<a class="navbar-brand" href="main.jsp"> <img
-								src="img/homepage/logo.JPG" alt="logo" style="width: 205px;">
+								src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;">
 							</a>
 							<button class="navbar-toggler" type="button"
 								data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -248,61 +249,58 @@
 	</section>
 	<!-- 홈키트 구성 보여주는 end -->
 
-	<!-- 연관테마 부분 begin -->
-	<!--::industries start::-->
-	<section class="best_services section_padding">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-6">
-					<div class="section_tittle text-center">
-						<h2>연관테마</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/50.jpg" alt=""
-							style="height: 200px; width: 300px;"></a>
-						<h3>
-							영화 속 다락방처럼 사랑스러워진 창고방의 대변신</a>
-						</h3>
-						<p>가격</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/49.jpg" alt=""
-							style="height: 200px; width: 300px;"></a>
-						<h3>
-							22년 된 아파트에 채워넣은 우리만의 색</a>
-						</h3>
-						<p>가격</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"><img src="img/homepage/47.jpg" alt=""
-							style="height: 200px; width: 300px;"></a>
-						<h3>
-							사부작사부작 단점을 장점으로 극복해가는 우리집</a>
-						</h3>
-						<p>가격</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_ihotel_list">
-						<a href="#"> <img src="img/homepage/46.jpg" alt=""
-							style="height: 200px; width: 300px;"></a>
-						<h3>한남동 재개발이 예정된 단독주택의 Last Dance</h3>
-						<p>가격</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--::industries end::-->
-	<!-- 연관테마 부분 end -->
+	 <!--::industries start::-->
+    <section class="best_services section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section_tittle text-center">
+                        <h2>연관된 테마</h2>
+                        <p>선호하는 테마와 비슷한 테마 더보기</p><hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
+                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <p>미니멀&심플</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/28.jpg" alt=""></a>
+                        <h3>호텔리조트 풍으로 원없이 꾸민 드림하우스</h3>
+                        <p>프렌츠&프로방스</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/30.jpg" alt=""></a>
+                        <h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
+                        <p>빈티지&레트로</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
+                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <p>미니멀&심플</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::industries end::-->
 	<!-- 수정: 전문가 추천모드에서 이동할 추천결과 페이지 end -->
 
 	<br>
