@@ -92,20 +92,19 @@
 								} else {
 							%>
 							<div class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle btn_1 d-none d-lg-block"
+								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false"><%=email%></a>
+									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
 										class="dropdown-item" href="LogoutService">로그아웃</a> <a
 										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
 								</div>
 							</div>
-							<a href="basket.jsp" class="btn_1 d-none d-lg-block"
-								style="margin-left: 5px;">장바구니</a>
-							<%
-								}
-							%>
+							<a href="basket.jsp" 
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+							<%} %>
+								
 						</nav>
 					</div>
 				</div>
@@ -133,7 +132,7 @@
 						<form action="DeleteCart" method="get">
 						<%
 								cartDAO dao = new cartDAO();
-								ArrayList<cartDTO> cartList = dao.showCart();
+								ArrayList<cartDTO> cartList = dao.showCart(email);
 
 								for (int i = 0; i < cartList.size(); i++) {
 									out.println("<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>");
@@ -141,13 +140,13 @@
 									out.println("<div class='country' >" + cartList.get(i).getCart_name() + "</div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_cnt() + "</div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_price() + "원</div>");
-									out.println("<div class='choice'><i class='fas fa-backspace'></i></div>");
+									out.println("<div class='choice'><a href='CartDelete?cart_name="+ cartList.get(i).getCart_name() +"'><i class='fas fa-backspace' style='color: gray;'></i></a></div>");
 									out.println("</div>");
 									
 								}
 						%>
 						</form>
-
+						
 					</div>
 				</div>
 			</div>

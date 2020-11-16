@@ -8,7 +8,7 @@ TEL VARCHAR2(50)
 )
 
 테이블 값 삽입(멤버)
-INSERT INTO MEMBER values('이주영', 'ken1204@naver.com', '1234567', '광주광역시 기숙사', '010-4128-3480')
+INSERT INTO MEMBER values('2주0', 'ken0000@naver.com', '1234567', '집2', '010-4128-3480')
 
 테이블 조회(멤버)
 SELECT * FROM MEMBER

@@ -77,8 +77,8 @@ public class cartDAO {
 		return cnt;
 	}
 	
-	// 전체 장바구니 보여주는 기능
-	public ArrayList<cartDTO> showCart() {
+	// 이메일에 맞는  장바구니 보여주는 기능
+	public ArrayList<cartDTO> showCart(String email) {
 		
 		cartDTO cart = null;
 		ArrayList<cartDTO> cartList = new ArrayList<>();
@@ -88,9 +88,9 @@ public class cartDAO {
 			getConn(); 
 			
 			// ------------------- DB에 SQL 명령문 준비
-			String sql = "select * from cart";
+			String sql = "select * from cart where email=?";
 			psmt = conn.prepareStatement(sql);
-			
+			psmt.setString(1, email);
 			rs = psmt.executeQuery();
 			
 			
@@ -98,14 +98,14 @@ public class cartDAO {
 				
 				//전체 장바구니 데이터를 출력
 				int cart_num = rs.getInt(1);
-				String email = rs.getString(2);
+				String email1 = rs.getString(2);
 				String cart_name = rs.getString(3);
 				int cart_cnt = rs.getInt(4);
 				int cart_price = rs.getInt(5);
 				String cart_img = rs.getString(6);
 				
 				// cartDTO 객체를 1개씩 DB에서 받은 후, ArrayList인 cartList에 저장
-				cart = new cartDTO(cart_num, email, cart_name, cart_cnt, cart_price, cart_img);
+				cart = new cartDTO(cart_num, email1, cart_name, cart_cnt, cart_price, cart_img);
 				cartList.add(cart);
 			}
 			
@@ -118,6 +118,8 @@ public class cartDAO {
 		}
 		return cartList;	
 	}
+	
+	// 장바구니에 있는 상품 삭제 기능
 	public int delete_Cart(String email, String pro_name) {
 		try {
 			
