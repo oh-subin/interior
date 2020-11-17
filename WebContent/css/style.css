@@ -2599,7 +2599,7 @@ ul {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_booking.scss */
 .booking_part {
 	margin-top: -80px;
-	z-index: -1;
+	z-index: 0;
 	position: relative;
 }
 

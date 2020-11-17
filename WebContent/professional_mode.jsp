@@ -107,7 +107,7 @@
 				</div>
 			</div>
 			<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
+   <script>
       $( document ).ready( function() {
         var jbOffset = $( '.jbMenu' ).offset();
         $( window ).scroll( function() {
@@ -132,7 +132,7 @@
 			</div>
  		</div>
       </p>
-    </div>
+    </div> 
     
    <!-- prograss bar end -->
 		</div>
@@ -184,7 +184,7 @@
 					</div>
 				</div>
 				<div class="col-lg-12">
-					<div class="booking_content">
+                <div class="booking_content">
 						<div class="tab-content" id="myTabContent">
 							<div class="tab-pane fade show active" id="hotel" role="tabpanel"
 								aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
@@ -193,59 +193,45 @@
 										<div class="form-row">
 											<div class="form_colum">
 												<select class="nc_select">
-													<option selected>인테리어 스타일</option>
-													<option value="1">모던</option>
-													<option value="2">내추럴</option>
-													<option value="3">북유럽</option>
-													<option value="4">빈티지&레트로</option>
-													<option value="5">유니크&믹스매치</option>
-													<option value="6">클래식&앤틱</option>
-													<option value="7">프로방스&로맨틱</option>
+													<option selected>공간</option>
+													<option value="아파트">아파트</option>
+													<option value="원룸&오피스텔">원룸&오피스텔</option>
+													<option value="빌라&연립">빌라&연립</option>
+													<option value="단독주택">단독주택</option>
 												</select>
 											</div>
 											<div class="form_colum">
 												<select class="nc_select">
-													<option selected>배경 색상</option>
-													<option value="1">흰색</option>
-													<option value="2">갈색</option>
-													<option value="3">회색</option>
-													<option value="4">검은색</option>
-													<option value="5">무채색</option>
-													<option value="6">비비드컬러</option>
-													<option value="7">빛바랜색</option>
-													<option value="8">어두운색</option>
-													<option value="9">자연의색</option>
-													<option value="10">차분한색</option>
-													<option value="11">원색</option>
-													<option value="12">나무색</option>
-													<option value="13">크림색</option>
-													<option value="14">파스텔</option>
-													<option value="15">베이지</option>
+													<option selected>평수</option>
+													<option value="10평대">10평대</option>
+													<option value="10평 미만">10평 미만</option>
+													<option value="20평대">20평대</option>
+													<option value="30평대">30평대</option>
+													<option value="40평대">40평대</option>
+													<option value="50평대 이상">50평대 이상</option>
 												</select>
 											</div>
-											<div class="form_colum" style="margin-right: 290px">
+											<div class="form_colum"  style="margin-right: 290px">
 												<select class="nc_select">
-													<option selected>소품 색상</option>
-													<option value="1">흰색</option>
-													<option value="2">갈색</option>
-													<option value="3">회색</option>
-													<option value="4">검은색</option>
-													<option value="5">무채색</option>
-													<option value="6">비비드컬러</option>
-													<option value="7">빛바랜색</option>
-													<option value="8">어두운색</option>
-													<option value="9">자연의색</option>
-													<option value="10">차분한색</option>
-													<option value="11">원색</option>
-													<option value="12">나무색</option>
-													<option value="13">크림색</option>
-													<option value="14">파스텔</option>
-													<option value="15">베이지</option>
+													<option selected>가족형태</option>
+													<option value="싱글라이프">싱글라이프</option>
+													<option value="신혼부부">신혼부부</option>
+													<option value="신혼부부, 아기가 있는 집">신혼부부, 아기가 있는 집</option>
+													<option value="아기가 있는 집">아기가 있는 집</option>
+													<option value="부모님과 함께 사는 집">부모님과 함께 사는 집</option>
+													<option value="아기가 있는 집, 취약 자녀가 있는 집">아기가 있는 집, 취약 자녀가 있는 집</option>
+													<option value="취약 자녀가 있는 집">취약 자녀가 있는 집</option>
 												</select>
 											</div>
 											<div class="form_btn">
 												<a href="result.jsp" class="btn_1">1차 추천</a>
 											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 										</div>
 									</form>
 								</div>
@@ -267,8 +253,8 @@
 	
 	<!--::industries start::-->
     <section class="hotel_list section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
+        <div class="container" style="margin-left: 200px;">
+            <div class="row justify-content-center" style="margin-right: 200px;">
                 <div class="col-xl-6" >
                     <div class="section_tittle text-center">
                         <h2>2. 평점 매기기</h2>
@@ -276,50 +262,88 @@
                     </div>
                 </div>
             </div>
-            <form>
+            
+            
             <div class="section-top-border" style="padding-top: 0px;">
                <div class="row gallery-item">
                    
                    <div class="col-md-6">
-                       <a href="img/homepage/536.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg);width: 400px;height: 300px;""></div></a>
                            
                            <div class="switch-wrap d-flex justify-content-between">
-                              
-                     </div>
-                           </div>
+	                           <!-- 모달창 버튼   -->
+	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     	   </div>
                    </div>
-                   <div class="col-md-6">
-                       <a href="img/homepage/612.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+                   <div class="col-md-6" style="float:right;">
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;"></div></a>
                            
                             <div class="switch-wrap d-flex justify-content-between">
-                             
-                     </div>
-                           </div>
-                   </div>
-                    <div class="col-md-6">
-                       <a href="img/homepage/536.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+	                            <!-- 모달창 버튼 BEGIN  -->
+	                            <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+	                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" style="margin-top: 200px;">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">평점 등록하기</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								        <form>
+								          <div class="form-group">
+								            <label for="message-text" class="col-form-label">평점:</label>
+								            <textarea class="form-control" id="message-text"></textarea>
+								          </div>
+								        </form>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">창 닫기</button>
+								        <button type="button" class="btn btn-primary">등록하기</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<!-- 모달창 버튼 END   -->
+		                     </div>
+		                 </div>
+		               </div>
+                   
+                   
+                    <div class="row gallery-item">
+                    <div class="col-md-6" style="float:right;">
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;""></div></a>
                          
                            <div class="switch-wrap d-flex justify-content-between">
-                               
-                     </div>
-                           </div>
-                   </div>
-                   <div class="col-md-6">
-                       <a href="img/homepage/612.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+	                           <!-- 모달창 버튼   -->
+	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     	   </div>
+                    </div>
+                    <div class="col-md-6" style="float:right;">
+                        <a href="img/homepage/10.jpg" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;""></div></a>
                           
-                            <div class="switch-wrap d-flex justify-content-between">
-                               
-                     </div>
-                           </div>
-                   </div>
-                   </div>
+                             <div class="switch-wrap d-flex justify-content-between">
+                                <!-- 모달창 버튼   -->
+                               <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     		 </div>
+                        </div>
+                    </div>
+                </div>
                </div>
-           </div>
-        </div>
+
         <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
         </form>
        </section>
