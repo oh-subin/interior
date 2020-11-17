@@ -107,7 +107,7 @@
 				</div>
 			</div>
 			<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
+   <script>
       $( document ).ready( function() {
         var jbOffset = $( '.jbMenu' ).offset();
         $( window ).scroll( function() {
@@ -132,7 +132,7 @@
 			</div>
  		</div>
       </p>
-    </div>
+    </div> 
     
    <!-- prograss bar end -->
 		</div>
@@ -184,7 +184,7 @@
 					</div>
 				</div>
 				<div class="col-lg-12">
-					<div class="booking_content">
+                <div class="booking_content">
 						<div class="tab-content" id="myTabContent">
 							<div class="tab-pane fade show active" id="hotel" role="tabpanel"
 								aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
@@ -193,59 +193,45 @@
 										<div class="form-row">
 											<div class="form_colum">
 												<select class="nc_select">
-													<option selected>인테리어 스타일</option>
-													<option value="1">모던</option>
-													<option value="2">내추럴</option>
-													<option value="3">북유럽</option>
-													<option value="4">빈티지&레트로</option>
-													<option value="5">유니크&믹스매치</option>
-													<option value="6">클래식&앤틱</option>
-													<option value="7">프로방스&로맨틱</option>
+													<option selected>공간</option>
+													<option value="아파트">아파트</option>
+													<option value="원룸&오피스텔">원룸&오피스텔</option>
+													<option value="빌라&연립">빌라&연립</option>
+													<option value="단독주택">단독주택</option>
 												</select>
 											</div>
 											<div class="form_colum">
 												<select class="nc_select">
-													<option selected>배경 색상</option>
-													<option value="1">흰색</option>
-													<option value="2">갈색</option>
-													<option value="3">회색</option>
-													<option value="4">검은색</option>
-													<option value="5">무채색</option>
-													<option value="6">비비드컬러</option>
-													<option value="7">빛바랜색</option>
-													<option value="8">어두운색</option>
-													<option value="9">자연의색</option>
-													<option value="10">차분한색</option>
-													<option value="11">원색</option>
-													<option value="12">나무색</option>
-													<option value="13">크림색</option>
-													<option value="14">파스텔</option>
-													<option value="15">베이지</option>
+													<option selected>평수</option>
+													<option value="10평대">10평대</option>
+													<option value="10평 미만">10평 미만</option>
+													<option value="20평대">20평대</option>
+													<option value="30평대">30평대</option>
+													<option value="40평대">40평대</option>
+													<option value="50평대 이상">50평대 이상</option>
 												</select>
 											</div>
-											<div class="form_colum" style="margin-right: 290px">
+											<div class="form_colum"  style="margin-right: 290px">
 												<select class="nc_select">
-													<option selected>소품 색상</option>
-													<option value="1">흰색</option>
-													<option value="2">갈색</option>
-													<option value="3">회색</option>
-													<option value="4">검은색</option>
-													<option value="5">무채색</option>
-													<option value="6">비비드컬러</option>
-													<option value="7">빛바랜색</option>
-													<option value="8">어두운색</option>
-													<option value="9">자연의색</option>
-													<option value="10">차분한색</option>
-													<option value="11">원색</option>
-													<option value="12">나무색</option>
-													<option value="13">크림색</option>
-													<option value="14">파스텔</option>
-													<option value="15">베이지</option>
+													<option selected>가족형태</option>
+													<option value="싱글라이프">싱글라이프</option>
+													<option value="신혼부부">신혼부부</option>
+													<option value="신혼부부, 아기가 있는 집">신혼부부, 아기가 있는 집</option>
+													<option value="아기가 있는 집">아기가 있는 집</option>
+													<option value="부모님과 함께 사는 집">부모님과 함께 사는 집</option>
+													<option value="아기가 있는 집, 취약 자녀가 있는 집">아기가 있는 집, 취약 자녀가 있는 집</option>
+													<option value="취약 자녀가 있는 집">취약 자녀가 있는 집</option>
 												</select>
 											</div>
 											<div class="form_btn">
 												<a href="result.jsp" class="btn_1">1차 추천</a>
 											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 										</div>
 									</form>
 								</div>
@@ -282,7 +268,8 @@
                    
                    <div class="col-md-6">
                        <a href="img/homepage/536.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div>
+                        </a>
                            
                            <div class="switch-wrap d-flex justify-content-between">
                               
