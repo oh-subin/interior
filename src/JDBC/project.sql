@@ -47,7 +47,7 @@ INSERT INTO PRODUCT values('유리 화병', '클래식', 17000, 'Product_img/Classic/78
 SELECT * FROM PRODUCT
 
 행 삭제(상품)
-DELETE FROM PRODUCT WHERE PRO_NAME='컬러볼 시계'
+DELETE FROM PRODUCT WHERE PRO_NAME='블루투스스피커'
 
 ----------------------------------------------------------------
 장바구니 테이블 생성
@@ -82,9 +82,18 @@ CYCLE
 DROP SEQUENCE CART_SEQ
 ----------------------------------------------------------------
 
-테이블 제거
-DROP TABLE MEMBER;
-DROP TABLE HOMEKIT;
-DROP TABLE PRODUCT;
-DROP TABLE CART;
+테이블 제거(주의)
+--DROP TABLE MEMBER;
+--DROP TABLE HOMEKIT;
+--DROP TABLE PRODUCT;
+--DROP TABLE CART;
+
+콘텐츠 기반 필터링 데이터
+SELECT * FROM INTERIOR_CONTENTS
+--DROP TABLE INTERIOR_CONTENTS
+
+사용자 기반 필터링 데이터
+SELECT * FROM INTERIOR_USER
+--DROP TABLE INTERIOR_CONTENTS
+
 

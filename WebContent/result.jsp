@@ -49,7 +49,7 @@
                     <div class="row align-items-center ">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
+                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.jpg" alt="logo" style="width: 205px;" /></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -192,7 +192,7 @@
 				<table>
 					<tr>
 						<%
-						String pro_style="모던";
+						String pro_style="북유럽";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						
@@ -266,8 +266,7 @@
                         <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
+                <div class="col-lg-3 col-sm-6">                    <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/30.jpg" alt=""></a>
                         <h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
                         <p>빈티지&레트로</p><br>

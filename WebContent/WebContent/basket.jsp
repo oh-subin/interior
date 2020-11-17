@@ -150,21 +150,21 @@
 							<div class="country">상품금액</div>
 							<div class="choice">삭제</div>
 						</div>
-						<form action="DeleteCart" method="get">
+						<form action="CartDelete" method="get">
 						<%
 								cartDAO dao = new cartDAO();
-								ArrayList<cartDTO> cartList = dao.showCart();
+								ArrayList<cartDTO> cartList = dao.showCart(email);
 
-								for (int i = 0; i < cartList.size(); i++) {
-									out.println("<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>");
-									out.println("<div class='country' ><img src='" + cartList.get(i).getCart_img() + "'width='50' height='50'></div>");
-									out.println("<div class='country' >" + cartList.get(i).getCart_name() + "</div>");
-									out.println("<div class='country' >" + cartList.get(i).getCart_cnt() + "</div>");
-									out.println("<div class='country' >" + cartList.get(i).getCart_price() + "원</div>");
-									out.println("<div class='choice'><i class='fas fa-backspace'></i></div>");
-									out.println("</div>");
+								for (int i = 0; i < cartList.size(); i++) { %>
+									<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>
+									<div class='country' ><img src='" + cartList.get(i).getCart_img() + "'width='50' height='50'></div>
+									<div class='country' >" + cartList.get(i).getCart_name() + "</div>
+									<div class='country' >" + cartList.get(i).getCart_cnt() + "</div>
+									<div class='country' >" + cartList.get(i).getCart_price() + "원</div>
+									<div class='choice'><a href=Cartdelete?cart_name=<%=cartList.get(i).getCart_name() %>><i class='fas fa-backspace'></i></a></div>
+									</div>
 									
-								}
+								<%}
 						%>
 						</form>
 
