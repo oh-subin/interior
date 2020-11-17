@@ -253,8 +253,8 @@
 	
 	<!--::industries start::-->
     <section class="hotel_list section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
+        <div class="container" style="margin-left: 200px;">
+            <div class="row justify-content-center" style="margin-right: 200px;">
                 <div class="col-xl-6" >
                     <div class="section_tittle text-center">
                         <h2>2. 평점 매기기</h2>
@@ -262,51 +262,88 @@
                     </div>
                 </div>
             </div>
-            <form>
+            
+            
             <div class="section-top-border" style="padding-top: 0px;">
                <div class="row gallery-item">
                    
                    <div class="col-md-6">
-                       <a href="img/homepage/536.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div>
-                        </a>
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg);width: 400px;height: 300px;""></div></a>
                            
                            <div class="switch-wrap d-flex justify-content-between">
-                              
-                     </div>
-                           </div>
+	                           <!-- 모달창 버튼   -->
+	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     	   </div>
                    </div>
-                   <div class="col-md-6">
-                       <a href="img/homepage/612.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+                   <div class="col-md-6" style="float:right;">
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;"></div></a>
                            
                             <div class="switch-wrap d-flex justify-content-between">
-                             
-                     </div>
-                           </div>
-                   </div>
-                    <div class="col-md-6">
-                       <a href="img/homepage/536.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/536.jpg);"></div></a>
+	                            <!-- 모달창 버튼 BEGIN  -->
+	                            <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+	                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" style="margin-top: 200px;">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">평점 등록하기</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								        <form>
+								          <div class="form-group">
+								            <label for="message-text" class="col-form-label">평점:</label>
+								            <textarea class="form-control" id="message-text"></textarea>
+								          </div>
+								        </form>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">창 닫기</button>
+								        <button type="button" class="btn btn-primary">등록하기</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<!-- 모달창 버튼 END   -->
+		                     </div>
+		                 </div>
+		               </div>
+                   
+                   
+                    <div class="row gallery-item">
+                    <div class="col-md-6" style="float:right;">
+                       <a href="img/homepage/10.jpg" class="img-pop-up">
+                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;""></div></a>
                          
                            <div class="switch-wrap d-flex justify-content-between">
-                               
-                     </div>
-                           </div>
-                   </div>
-                   <div class="col-md-6">
-                       <a href="img/homepage/612.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/612.jpg);"></div></a>
+	                           <!-- 모달창 버튼   -->
+	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     	   </div>
+                    </div>
+                    <div class="col-md-6" style="float:right;">
+                        <a href="img/homepage/10.jpg" class="img-pop-up">
+                            <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;""></div></a>
                           
-                            <div class="switch-wrap d-flex justify-content-between">
-                               
-                     </div>
-                           </div>
-                   </div>
-                   </div>
+                             <div class="switch-wrap d-flex justify-content-between">
+                                <!-- 모달창 버튼   -->
+                               <button type="button" class="btn btn-primary" data-toggle="modal" 
+	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
+	                           margin-top: 30px;">평점 등록하기</button>
+                     		 </div>
+                        </div>
+                    </div>
+                </div>
                </div>
-           </div>
-        </div>
+
         <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
         </form>
        </section>
