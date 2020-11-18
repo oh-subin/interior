@@ -105,23 +105,23 @@
  <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
                         
+    <!-- breadcrumb start-->
     <!-- 수정: 사이트 소개 begin -->
-	<!-- banner part start-->
-	<section class="breadcrumb breadcrumb_bg" style="height: 324px; background-color:#fdefed49;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb_iner">
-						<div class="breadcrumb_iner_item text-center">
-                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:#6c757d; margin-bottom: 100px">Homekit Process Presentation</h2>
-                             <p style="margin-bottom:100px">홈키트 추천 및 구매과정을 소개해드립니다.</p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <!-- banner part end-->
+    <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item text-center">
+                            <h2>Homekit Process Presentation</h2>
+                            <p style="padding-bottom: 80px;">홈키트 추천 및 구매과정을 소개해드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
 <br><br><br><br><br>
     <!-- about us css start-->
     <section class="about_us section_padding">
