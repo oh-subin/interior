@@ -2,7 +2,6 @@ package com.control;
 
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +28,6 @@ public class FirstRecommendation extends HttpServlet {
 		request.setAttribute("rec_space", rec_space);
 		request.setAttribute("rec_size", rec_size);
 		request.setAttribute("rec_familyShape", rec_familyShape);
-		
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("professional_mode.jsp");
 		dispatcher.forward(request, response);

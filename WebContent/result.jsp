@@ -192,7 +192,7 @@
 				<table>
 					<tr>
 						<%
-						String pro_style="북유럽";
+						String pro_style="모던";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						

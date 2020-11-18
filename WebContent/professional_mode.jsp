@@ -204,7 +204,7 @@
 																		<select class="nc_select" name="select_size">
 																			<option selected>평수</option>
 																			<option value="10평대">10평대</option>
-																			<option value="10평 미만">10평 미만</option>
+																			<option value="10평미만">10평미만</option>
 																			<option value="20평대">20평대</option>
 																			<option value="30평대">30평대</option>
 																			<option value="40평대">40평대</option>
@@ -255,6 +255,7 @@
 
 	<!--::industries start::-->
 	<section class="hotel_list section_padding">
+	<form action="SecondRecommendation" method="post">
 		<div class="container" style="margin-left: 200px;">
 			<div class="row justify-content-center" style="margin-right: 200px;">
 				<div class="col-xl-6">
@@ -266,57 +267,13 @@
 			</div>
 
 
-			<div class="section-top-border" style="padding-top: 0px;">
-				<div class="row gallery-item">
 
 
-					<div class="col-md-6" style="float: right;">
-						<a href="img/homepage/10.jpg" class="img-pop-up">
-							<div class="single-gallery-image"
-								style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;"></div>
-						</a>
 
-						<div class="switch-wrap d-flex justify-content-between">
-							모달창 버튼 BEGIN
-							<button type="button" class="btn btn-primary" data-toggle="modal"
-								data-target="#exampleModal" data-whatever="@mdo"
-								style="margin-left: 150px; margin-top: 30px;">평점 등록하기</button>
-							<div class="modal fade" id="exampleModal" tabindex="-1"
-								aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" style="margin-top: 200px;">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">평점 등록하기</h5>
-											<button type="button" class="close" data-dismiss="modal"
-												aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body">
-											<form>
-												<div class="form-group">
-													<label for="message-text" class="col-form-label">평점:</label>
-													<textarea class="form-control" id="message-text"></textarea>
-												</div>
-											</form>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary"
-												data-dismiss="modal">창 닫기</button>
-											<input type="submit" class="btn btn-primary" value="등록하기">
-										</div>
-									</div>
-								</div>
-							</div>
-							모달창 버튼 END
-						</div>
-					</div>
-				</div>
+			<div class="row gallery-item">
 
-
-				<div class="row gallery-item">
-					<!-- 반복문 시작 지점 -->
-					<%
+				<!-- 반복문 시작 지점 -->
+				<%
 						String rec_space = (String) request.getAttribute("rec_space");
 					String rec_size = (String) request.getAttribute("rec_size");
 					String rec_familyShape = (String) request.getAttribute("rec_familyShape");
@@ -328,56 +285,34 @@
 					ArrayList<RecommendationDTO> imgList = dao.showIMG(rec_space, rec_size, rec_familyShape);
 					System.out.println(imgList);
 					%>
-					<%
+				<%
 						if (imgList.isEmpty()) {
 					%>
 
-					<h2>추천해주세요!</h2>
-					<%
+				<h2>추천해주세요!</h2>
+				<%
 						} else {
 					%>
-					<%
+				<%
 						for (int i = 0; i < 4; i++) {
 					%>
+			
 					<div class="col-md-6" style="float: right;">
 						<a href="img/homepage/10.jpg" class="img-pop-up">
 							<div class="single-gallery-image"
 								style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;"></div>
 						</a>
 						<div class="switch-wrap d-flex justify-content-between">
-							<!-- 모달창 버튼   -->
-							<button type="button" class="btn btn-primary" data-toggle="modal"
-								data-target="#exampleModal" data-whatever="@mdo"
-								style="margin-left: 150px; margin-top: 30px;">평점 등록하기</button>
-							<div class="modal fade" id="rating-modal" tabindex="-1"
-								aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" style="margin-top: 200px;">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">평점 등록하기</h5>
-											<button type="button" class="close" data-dismiss="modal"
-												aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body">
-											<form>
-												<div class="form-group">
-													<label for="message-text" class="col-form-label">평점:</label>
-													<textarea class="form-control" class="rating"
-														name="ratings"></textarea>
-												</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary"
-												data-dismiss="modal">창 닫기</button>
-											<button type="button" class="btn btn-primary" id="ratingInput">등록하기</button>
-										</div>
-										</form>
-									</div>
-								</div>
+							<div class="ratingVal<%=i+1%>">
+								<label><input type="radio" name="rating<%=i+1%>" value="1">1</label>
+								<label><input type="radio" name="rating<%=i+1%>" value="2">2</label>
+								<label><input type="radio" name="rating<%=i+1%>" value="3">3</label>
+								<label><input type="radio" name="rating<%=i+1%>" value="4">4</label>
+								<label><input type="radio" name="rating<%=i+1%>" value="5">5</label>
+								<input type="hidden" value=<%=imgList.get(i).getRec_style()%> name="style<%=i+1%>"/>
+								<p><%=imgList.get(i).getRec_title()%></p>
+								<p><%=imgList.get(i).getRec_style()%></p>
 							</div>
-							<p><%=imgList.get(i).getRec_title()%></p>
 						</div>
 					</div>
 					<%
@@ -386,43 +321,10 @@
 					<%
 						}
 					%>
-
-
-
-					<!-- 반복문 끝나는 지점  -->
-					<!-- <div class="col-md-6" style="float: right;">
-						<a href="img/homepage/10.jpg" class="img-pop-up">
-							<div class="single-gallery-image"
-								style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;""></div>
-						</a>
-
-						<div class="switch-wrap d-flex justify-content-between">
-							모달창 버튼  
-							<button type="button" class="btn btn-primary" data-toggle="modal"
-								data-target="#exampleModal" data-whatever="@mdo"
-								style="margin-left: 150px; margin-top: 30px;">평점 등록하기</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6" style="float: right;">
-						<a href="img/homepage/10.jpg" class="img-pop-up">
-							<div class="single-gallery-image"
-								style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;""></div>
-						</a>
-
-						<div class="switch-wrap d-flex justify-content-between">
-							모달창 버튼  
-							<button type="button" class="btn btn-primary" data-toggle="modal"
-								data-target="#exampleModal" data-whatever="@mdo"
-								style="margin-left: 150px; margin-top: 30px;">평점 등록하기</button>
-						</div>
-					</div> -->
-				</div>
+				
 			</div>
 		</div>
-
-		<input type="button" id="select" value="2차 추천" class="btn_1"
-			onclick="test_checkbox();"
+		<input type="submit" id="select" value="2차 추천" class="btn_1"
 			style="margin-left: 650px; margin-top: 70px;">
 		</form>
 	</section>
@@ -497,24 +399,40 @@
 	</script>
 
 	<script>
-		var ratings = $(".rating").serialize();
-		
-		console.log($('#ratingInput'));
-		
-		$('#ratingInput').on('click', function() {
-			$.ajax({
-				url : "secondRecommendation",
-				type : "POST",
-				data : ratings,
-				success : function(result) {
-					console.log("평점 보내기 완료! 상세 추천을 시작합니다.")
-					$(".rating").text(result);
-				},
-				error : function() {
-					alert("에러 발생")
+		function test_checkbox() {
+			var flag = false;
+			var ratings = document.getElementsByName("rating");
+			var count = 0
+			var ratingList = [];
+
+			for (var i = 0; i < ratings.length; i++) {
+				if (ratings[i].checked) {
+					ratingList.push(ratings[i].checked)
+					count++;
 				}
-			});
-		})
+			}
+
+			if (count <= 4) {
+				alert("2개 이상 선택해야 합니다.");
+			} else {
+				alert(count + "개 선택했습니다.\n선택한 사진 : " + ratingList);
+
+				// ajax로 배열값 넘기기
+				jQuery.ajaxSettings.traditional = true;//ajax로 배열을 보낼 때 필요한 설정
+				$.ajax({
+					url : 'SecondRecommendation',
+					method : 'post',
+					data : {
+						'ratingList' : ratingList
+					}
+				});
+
+				// alert 후 추천페이지로 이동 
+				location.href = "result.jsp";
+				flag = true;
+			}
+			return flag;
+		}
 	</script>
 </body>
 
