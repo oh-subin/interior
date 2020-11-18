@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 
@@ -123,7 +122,7 @@
     
     <div class="jbMenu" style="height: 100px;">
       <p>
-        <div style="width: 600px;margin-left: 400px;height: 20px;">
+        <div style="width: 600px;margin-left: 500px;height: 20px;">
  			<div style="width: 600px;height: 20px;">
 			<b class="prograss_text">추천 진행도<b style="padding-left: 440px;">0%</b></b>
 			</div>
@@ -133,24 +132,11 @@
  		</div>
       </p>
     </div> 
-    
    <!-- prograss bar end -->
 		</div>
 	</header>
 	<!-- 수정: 상위메뉴 이름 지정 end -->
 	<!-- Header part end-->
-
-	<!-- 수정: 전문가 추천 모드 페이지 begin -->
-	<!-- banner part start-->
-	<section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb_iner">
-						<div class="breadcrumb_iner_item text-center">
-							<h2>professional mode</h2>
-							<p style="padding-bottom: 80px;">인테리어가 익숙한 당신을 위한 추천 모드입니다.</p>
-
    
 	<!-- 수정: 전문가 추천 모드 페이지 begin -->
   <!-- prograss bar 100% begin -->
@@ -169,10 +155,10 @@
 	<section class="booking_part" style="margin-top: 70px;height: 400px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12" >
 					<div class="booking_menu">
-						<h2>1. 태그 선택</h2><br>
-						<p>인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
+						<h2 style="color:#012a4a; font-size:40px;">1. 태그 선택</h2><br>
+						<p style="color:#01497c; font-size:20px;background-color:#e2eafc;">인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
 						
 						<!-- 프로그레스 바 -->
 							<!-- <p>추천 진행도</p>
@@ -224,7 +210,7 @@
 												</select>
 											</div>
 											<div class="form_btn">
-												<a href="result.jsp" class="btn_1">1차 추천</a>
+												<a href="result.jsp" class="btn_1" style="background-color:rgb(168, 167, 167);">1차 추천</a>
 											</div>
 										</div>
 									</form>
@@ -247,18 +233,15 @@
 
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
 	
 	<!--::industries start::-->
-    <section class="hotel_list section_padding">
-        <div class="container" style="margin-left: 200px;">
+    <section class="hotel_list section_padding" >
+        <div class="container" style="margin-left: 300px;">
             <div class="row justify-content-center" style="margin-right: 200px;">
                 <div class="col-xl-6" >
-                    <div class="section_tittle text-center">
-                        <h2>2. 평점 매기기</h2>
-						<p>사진을 클릭하여 평점을 1~5까지 입력해주세요 </p>
+                    <div class="section_tittle text-center" >
+                        <h2 style="color:#012a4a font-size:40px;">2. 평점 매기기</h2>
+						<p style="color:#01497c; font-size:20px; background-color:#e2eafc;">버튼을 클릭하여 평점을 1~5까지 입력해주세요 </p>
                     </div>
                 </div>
             </div>
@@ -269,24 +252,24 @@
                    
                    <div class="col-md-6">
                        <a href="img/homepage/10.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg);width: 400px;height: 300px;""></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/12.jpg);width: 400px;height: 300px;""></div></a>
                            
                            <div class="switch-wrap d-flex justify-content-between">
 	                           <!-- 모달창 버튼   -->
 	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff; ">평점 등록하기</button>
                      	   </div>
                    </div>
                    <div class="col-md-6" style="float:right;">
                        <a href="img/homepage/10.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;"></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/12.jpg); width: 400px;height: 300px;"></div></a>
                            
                             <div class="switch-wrap d-flex justify-content-between">
 	                            <!-- 모달창 버튼 BEGIN  -->
 	                            <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
 	                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 								  <div class="modal-dialog" style="margin-top: 200px;">
 								    <div class="modal-content">
@@ -326,7 +309,7 @@
 	                           <!-- 모달창 버튼   -->
 	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
                      	   </div>
                     </div>
                     <div class="col-md-6" style="float:right;">
@@ -337,19 +320,21 @@
                                 <!-- 모달창 버튼   -->
                                <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
                      		 </div>
                         </div>
                     </div>
                 </div>
                </div>
 
-        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
+        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" 
+        style="margin-left: 760px; margin-top: 30px; border-color:#fff;">
         </form>
        </section>
 	<br>
 	<br>
-	<br>
+	<div style="background: url(img/homepage/text_img.JPG); width: 1200px;height: 150px; 
+	margin-left:200px; background-repeat:no-repeat;"></div>
 	<br>
 	<br>
 
@@ -359,7 +344,7 @@
 
 		<div class="row justify-content-center">
 			<div class="col-lg-12">
-				<div class="copyright_part_text text-center">
+				<div class="copyright_part_text text-center" style="margin-top: 0px;">
 					<p class="footer-text m-0">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
