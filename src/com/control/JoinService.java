@@ -26,8 +26,8 @@ public class JoinService extends HttpServlet {
 		String pw = request.getParameter("pw");
 		String tel = request.getParameter("tel");
 
-		MemberDAO dao = new MemberDAO();
-		int cnt = dao.Join(name, address, email, pw, tel);
+		MemberDAO dao = new MemberDAO();																																									
+		int cnt = dao.Join(name, email, pw, address, tel);
 
 		if (cnt > 0) { // SQL문 실행이 성공하면
 			response.setContentType("text/html; charset=UTF-8");

@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<% request.setCharacterEncoding("EUC-KR"); %>
+<% request.setCharacterEncoding("UTF-8"); %>
 <html lang="en">
 <head>
 
-  <meta charset="EUC-KR">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Ήζ±ΈΌ® ΐΞΕΧΈ®Ύξ - ΘΈΏψΕ»Επ</title>
+  <title>λ°©κµ¬μ„ μΈν…λ¦¬μ–΄ - νμ›νƒν‡΄</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -41,7 +41,7 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">ΘΈΏψΕ»Επ</h1>
+                    <h1 class="h4 text-gray-900 mb-4">νμ›νƒν‡΄</h1>
                   </div>
                   <form class="user" action ="DeleteService" method="post">
                     <div class="form-group">
@@ -50,11 +50,11 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="Ε»Επ" class="btn btn-primary btn-user btn-block">
+                    <input type= "submit" value ="νƒν‡΄" class="btn btn-primary btn-user btn-block">
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="main.jsp">ΈήΐΞ ΖδΐΜΑφ·Ξ µΉΎΖ°΅±β</a>
+                    <a class="small" href="main.jsp">λ©”μΈ νμ΄μ§€λ΅ λμ•„κ°€κΈ°</a>
               	</div>
                 </div>
               </div>
