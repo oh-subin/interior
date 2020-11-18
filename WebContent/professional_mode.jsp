@@ -283,7 +283,7 @@
 								        <form>
 								          <div class="form-group">
 								            <label for="message-text" class="col-form-label">평점:</label>
-								            <textarea class="form-control" id="message-text"></textarea>
+								            <textarea class="form-control" id="message-text" style="height:30px;" placeholder="예) 평점은 5점입니다."></textarea>
 								          </div>
 								        </form>
 								      </div>
@@ -333,7 +333,7 @@
        </section>
 	<br>
 	<br>
-	<div style="background: url(img/homepage/text_img.JPG); width: 1200px;height: 150px; 
+	<div style="background: url(img/homepage/text_img2.JPG); width: 1200px;height: 150px; 
 	margin-left:200px; background-repeat:no-repeat;"></div>
 	<br>
 	<br>
