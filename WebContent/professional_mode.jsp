@@ -287,7 +287,7 @@
                            <div class="single-gallery-image" style="background: url(img/homepage/10.jpg); width: 400px;height: 300px;"></div></a>
                            
                             <div class="switch-wrap d-flex justify-content-between">
-	                      
+					
 		                     </div>
 		                 </div>
 		               </div>
@@ -325,7 +325,8 @@
        </section>
 	<br>
 	<br>
-	<br>
+	<div style="background: url(img/homepage/text_img2.JPG); width: 1200px;height: 150px; 
+	margin-left:200px; background-repeat:no-repeat;"></div>
 	<br>
 	<br>
 
