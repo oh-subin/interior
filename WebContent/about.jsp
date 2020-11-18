@@ -152,7 +152,7 @@
                                         <h5>추천받는 과정</h5>
                                         <p><strong>1. 태그 선택하기:</strong> 인테리어에 필요한 사항을 태그로 입력합니다.<br></p>
                                         <p><strong>2. 평점 등록하기:</strong> 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록합니다</p>
-                                        <a href="Beginner_Mode.jsp" class="btn_1">추천받으러 이동하기</a> 
+                                        <a href="professional_mode.jsp" class="btn_1">추천받으러 이동하기</a> 
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                         <p>새로운 홈키트로 인테리어를 바꾸고 싶은 사용자를 위한 페이지입니다. 사용하지 않는 홈키트를 되팔고 새로운 홈키트를 구매할 수 있습니다.
                                         	<br>구매자는 홈키트를 값싼 가격에 구매할 수 있어 인테리어 비용의 부담을 덜어드립니다.</p>
                                         <!-- "javascript:void(0)" : 클릭 안 되게  -> 페이지 이동할 게 없기 때문에 -->
-                                        <a href="javascript:void(0)" class="btn_1">중고키트 판매하러 이동하기</a>
+                                        <a href="Used_Homekit_Sale.jsp" class="btn_1">중고키트 판매하러 이동하기</a>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                         <h2>쇼핑몰</h2>
                                         <p>다양한 홈키트를 한번에 만나볼 수 있는 홈키트 쇼핑몰입니다. 
                                         <br>여러 상품을 비교해보며 원하는 홈키트를 골라보세요!</p>
-                                        <a href="javascript:void(0)" class="btn_1">쇼핑몰 구경하러 이동하기</a>
+                                        <a href="products.jsp" class="btn_1">쇼핑몰 구경하러 이동하기</a>
                                     </div>
                                         
                                 </div>

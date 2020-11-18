@@ -113,14 +113,15 @@
         <div class="container">
             <div class="row align-items-center" style="height: 200px;">
                 <div class="col-lg-6">
-                    <div class="about_img">
+                <form>
+                        <div class="about_img">
                         <div><p style="color:rgb(122, 122, 122);">홈키트 상품 > 홈키트 구성</p></div><br><br>
-                        <img src="img/homepage/119.jpg" alt="#" style="height: 400px; width: 500px;"><br>
+                        <img src="img/homepage/119.jpg" name="pro_img" alt="#" style="height: 400px; width: 500px;"><br>
                     </div>
                 </div>
                 <div class="col-lg-6" style="display:auto;padding-left: 0px;padding-top: 50px;">
                     <div class="about_text" style="width:500px;margin-top: 0px;">
-                        <h3 style="font-size:30px;">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</h3>
+                        <h3 style="font-size:30px;" name="pro_name">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</h3>
                         <div class="col-lg-6" style="display:auto;">
                             <div class="about_text" style="padding-top: 10px;width: 600px;">
                                 <div class="rating">
@@ -133,7 +134,7 @@
                                     <span>(100개의 리뷰)</span>
                                 </div>
                                 <br><br>
-                                <span style="font-size: 15px;"><h3 style="font-size: 40px;">100,500 <del>150,000</del><b style="color:red; font-size:25px"> 30% <span style="font-size: 15px;">최저가</span></b></h3></span>
+                                <span style="font-size: 15px;"><h3 style="font-size: 40px;" name="pro_price">100,500 <del>150,000</del><b style="color:red; font-size:25px"> 30% <span style="font-size: 15px;">최저가</span></b></h3></span>
                                 <b style="color:red; font-size: 17px">500포인트</b><span style="font-size: 17px"> 적립</span><hr>
                                 <p style="font-size: 15px;">조건부 무료배송 3000원 (5만원 이상 구매 시 무료)</p>
                             </div><br>
@@ -161,9 +162,11 @@
                             // 선택하면 종류 보여주기 end
                             </script>
                                 <div class="result_btn">
-                                <a href="#" class="genric-btn info radius" style="style=;width: 181.99074000000002px;height: 51.99074px;margin-right: 30px; background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">장바구니</span></a>
-                                <a href="#" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">바로 구매</span></a>
+                                <!-- 선택된 상품 보내기  -->
+                                <a href="basket.jsp" class="genric-btn info radius" style="style=;width: 181.99074000000002px;height: 51.99074px;margin-right: 30px; background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">장바구니</span></a>
+                                <a href="payment.jsp" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">바로 구매</span></a>
                                 </div>
+                               </form>
                             </div>
                         </div>
                     </div>

@@ -234,9 +234,13 @@
 											</div>
 											<div class="form_btn">
 <<<<<<< HEAD
+<<<<<<< HEAD
 												<a href="result.jsp" class="btn_1" style="background-color:rgba(199, 199, 199, 0.506);">1차 추천</a>
 =======
 												<a href="result.jsp" class="btn_1">1차 추천</a>
+>>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
+=======
+												<a href="#" class="btn_1">1차 추천</a>
 >>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
 											</div>
 										</div>
@@ -373,7 +377,7 @@
         </form>
 =======
 
-        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
+        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="location.href='result.jsp'" style="margin-left: 650px; margin-top: 70px;">
       </form>
 >>>>>>> branch 'master' of https://github.com/oh-subin/interior.git
        </section>
