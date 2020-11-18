@@ -26,6 +26,7 @@
 
 <body class="bg-gradient-primary">
 
+
   <div class="container">
 
     <!-- Outer Row -->
@@ -37,7 +38,7 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
@@ -56,7 +57,7 @@
                         <label class="custom-control-label" for="customCheck">기억하기</label>
                       </div>
                     </div>
-                    <input type= "submit" value ="로그인" class="btn btn-primary btn-user btn-block">
+                    <input type= "submit" value ="로그인" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                   </form>
                   <hr>
                   <div class="text-center">
@@ -79,6 +80,27 @@
     </div>
 
   </div>
+  <!-- footer part start-->
+	<footer class="footer-area">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="copyright_part_text text-center">
+					<p class="footer-text m-0">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script>
+						All rights reserved | This template is made with <i
+							class="ti-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- footer part end-->
+  
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -89,6 +111,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  
+
 
 </body>
 
