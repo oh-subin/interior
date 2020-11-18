@@ -88,9 +88,14 @@
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
-										class="dropdown-item" href="LogoutService">로그아웃</a> <a
-										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+									<%}else{ %>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
