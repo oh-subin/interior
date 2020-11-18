@@ -75,7 +75,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                           <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -88,9 +88,14 @@
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
-										class="dropdown-item" href="LogoutService">로그아웃</a> <a
-										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+									<%}else{ %>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
@@ -113,7 +118,7 @@
                     <div class="col-lg-12">
                         <div class="breadcrumb_iner">
                             <div class="breadcrumb_iner_item text-center">
-                                <h2 style="padding-bottom: 30px; padding-top:120px;" >"Order Completed"</h2>
+                                <h2 style="padding-top:80px; margin-bottom:120px" >"Order Completed"</h2>
                                 <p style="padding-bottom: 30px;">고객님, 주문이 완료되었습니다. <br><br> 저희 상품을 구매해주셔서 감사합니다.</p>
                                 <p>주문하신 상품의 배송은 15일 이내 완료됩니다. <br><br> 상세 배송정보는 배송조회 페이지에서 확인이 가능합니다.</p>
                             </div>

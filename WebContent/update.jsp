@@ -61,7 +61,7 @@
                     <div class="form-group">
                       <input type="text" name ="tel" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tel">
                     </div>
-                    <input type="submit" value="수정" class="btn btn-primary btn-user btn-block">
+                    <input type="submit" value="수정" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                     
                   </form>
                   <hr>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="utf-8"%>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>¹æ±¸¼® ÀÎÅ×¸®¾î - È¸¿ø°¡ÀÔ</title>
+  <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´ - íšŒì›ê°€ìž…</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -37,9 +37,9 @@
           <div class="col-lg-7" style="margin-left:40px">
             <div class="p-5">
               <div class="text-center" style="width:400px">
-                <h1 class="h4 text-gray-900 mb-4">È¸¿ø°¡ÀÔ</h1>
+                <h1 class="h4 text-gray-900 mb-4">íšŒì›ê°€ìž…</h1>
               </div>
-              <form class="user" action="JoinService" method="post" accept-charset="EUC-KR" style="width:400px">
+              <form class="user" action="JoinService" method="post" style="width:400px">
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="text" name= "name" class="form-control form-control-user" id="exampleFirstName" placeholder="Name">
@@ -69,10 +69,10 @@
 				        	
 				        	if(data == "true"){
 				        		p1.style.cssText ="color : red;"
-				        		p1.innerHTML ="»ç¿ëÇÒ ¼ö ¾ø´Â ¾ÆÀÌµðÀÔ´Ï´Ù."
+				        		p1.innerHTML ="ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì•„ì´ë””ìž…ë‹ˆë‹¤."
 				        	}else{
 				        		p1.style.cssText ="color : blue;"
-				        		p1.innerHTML ="»ç¿ëÇÒ ¼ö ÀÖ´Â ¾ÆÀÌµðÀÔ´Ï´Ù."
+				        		p1.innerHTML ="ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì•„ì´ë””ìž…ë‹ˆë‹¤."
 				        	}
 				        	 
 				         },
@@ -96,20 +96,20 @@
                 <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck" required>
-                        <label class="custom-control-label" for="customCheck">ÀÌ¿ë¾à°ü¿¡ µ¿ÀÇÇÕ´Ï´Ù.</label>
+                        <label class="custom-control-label" for="customCheck">ì´ìš©ì•½ê´€ì— ë™ì˜í•©ë‹ˆë‹¤.</label>
                       </div>
                 </div>
-                <input type="submit" value ="°¡ÀÔ"  class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                <input type="submit" value ="ê°€ìž…"  class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
               </form>
               <hr style="width: 400px">
               <div class="text-center" style="width: 400px">
-                <a class="small" href="javascript:void(0)">ºñ¹Ð¹øÈ£¸¦ ÀØÀ¸¼Ì³ª¿ä?</a>
+                <a class="small" href="javascript:void(0)">ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠìœ¼ì…¨ë‚˜ìš”?</a>
               </div>
               <div class="text-center" style="width: 400px">
-                <a class="small" href="login.jsp">ÀÌ¹Ì °èÁ¤ÀÌ ÀÖ½À´Ï´Ù. ·Î±×ÀÎ</a>
+                <a class="small" href="login.jsp">ì´ë¯¸ ê³„ì •ì´ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸</a>
               </div>
               <div class="text-center" style="width: 400px">
-                    <a class="small" href="main.jsp">¸ÞÀÎ ÆäÀÌÁö·Î µ¹¾Æ°¡±â</a>
+                    <a class="small" href="main.jsp">ë©”ì¸ íŽ˜ì´ì§€ë¡œ ëŒì•„ê°€ê¸°</a>
               </div>
             </div>
           </div>

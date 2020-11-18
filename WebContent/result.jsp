@@ -80,7 +80,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                          <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -95,9 +95,14 @@
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
-										class="dropdown-item" href="LogoutService">로그아웃</a> <a
-										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+									<%}else{ %>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
@@ -120,7 +125,7 @@
 				<div class="col-lg-12">
 					<div class="breadcrumb_iner">
 						<div class="breadcrumb_iner_item text-center">
-							<h2>Recommanded Result</h2>
+							<h2 style="margin-bottom: 50px;">Recommanded Result</h2>
 							<p style="padding-bottom: 80px;">추천된 인테리어 결과를 확인하세요</p>
 						</div>
 					</div>
@@ -169,9 +174,9 @@
 						<div class="result_btn">
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
-								받기</a> <a href="#" class="genric-btn info radius"
-								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">집들
-								가기</a>
+								받기</a> <a href="payment.jsp" class="genric-btn info radius"
+								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
+
 						</div>
 					</div>
 				</div>
@@ -181,7 +186,7 @@
 
 	<!-- 홈키트 구성 보여주는 begin -->
 	<section class="about_us section_padding"
-		style="margin-bottom: 300px; margin-top: 100px;">
+		style="margin-bottom: 300px; margin-top: 100px; height: 70px;">
 		<div class="container">
 
 			<section

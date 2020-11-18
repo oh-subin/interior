@@ -48,7 +48,7 @@
                     <div class="row align-items-center ">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.jpg" alt="logo" style="width: 205px;"> </a>
+                                <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                           <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -92,9 +92,14 @@
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
-										class="dropdown-item" href="LogoutService">로그아웃</a> <a
-										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+									<%}else{ %>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
+									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
@@ -116,7 +121,7 @@
 				<div class="col-lg-12">
 					<div class="breadcrumb_iner">
 						<div class="breadcrumb_iner_item text-center">
-                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:#6c757d; margin-bottom: 100px">Homekit Products</h2>
+                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:rgb(168, 167, 167); margin-bottom: 100px">Homekit Products</h2>
                          </div>
                      </div>
                  </div>
@@ -131,10 +136,12 @@
         <div class="container">
             <hr><p style="color:#6c757d; font-size:25px; font-family:'S-CoreDream-2ExtraLight'">BEST OFFER</p><hr>          
                <div class="row gallery-item">
+               
+               <!-- 홈키트 가져오는 반복문 사용 12개 -->
                    <div class="col-md-4">
-                       <a href="img/homepage/310.jpg" class="img-pop-up">
-                           <div class="single-gallery-image" style="background: url(img/homepage/310.jpg); background-size: contain; background-repeat: no-repeat;""></div></a>
-                           <div style="padding-top: 20px;"><span style="font-size:20px;">집에서도 휴양지에 온 것처럼ㅣ라탄&빈티지의 아름다운 무드</span>
+                          <a href="kit-detail.jsp">
+                          <div class="single-gallery-image" style="background: url(img/homepage/310.jpg); background-size: contain; background-repeat: no-repeat;"></div></a>
+                          <div style="padding-top: 20px;"><span style="font-size:20px;">집에서도 휴양지에 온 것처럼ㅣ라탄&빈티지의 아름다운 무드</span>
                             <div>
                                 <p>빈티지&레트로</p>
                                 <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
@@ -148,7 +155,7 @@
                            </div>
                        </div> 
                    <div class="col-md-4">
-                       <a href="img/homepage/318.jpg" class="img-pop-up">
+                       <a href="img/homepage/318.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/318.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span><strong style="font-size:20px;">프로 홈베이커의 아담하고 달콤한 자취방</strong></span>
                             <div>
@@ -164,7 +171,7 @@
                            </div>
                    </div>
                    <div class="col-md-4">
-                       <a href="img/homepage/514.jpg" class="img-pop-up">
+                       <a href="img/homepage/514.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</strong></span>
                             <div>
@@ -180,7 +187,7 @@
                            </div>
                    </div>
                    <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -196,7 +203,7 @@
                         </div>
                 </div>
                    <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -212,7 +219,7 @@
                         </div>
                 </div>
                    <div class="col-md-4">
-                       <a href="img/homepage/787.jpg" class="img-pop-up">
+                       <a href="img/homepage/787.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/787.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">따뜻한 햇살이 스며든 봄날의 카페 같은 집</strong></span>
                             <div>
@@ -228,7 +235,7 @@
                            </div>
                    </div>
                    <div class="col-md-4">
-                       <a href="img/homepage/1016.jpg" class="img-pop-up">
+                       <a href="img/homepage/1016.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -244,7 +251,7 @@
                            </div>
                    </div>
                    <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -260,7 +267,7 @@
                         </div>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -276,7 +283,7 @@
                         </div>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -292,7 +299,7 @@
                         </div>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
@@ -308,7 +315,7 @@
                         </div>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/homepage/119.jpg" class="img-pop-up">
+                    <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
