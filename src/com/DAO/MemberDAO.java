@@ -50,7 +50,7 @@ public class MemberDAO {
 	}
 
 	// 회원가입
-	public int Join(String name, String address, String email, String pw, String tel) {
+	public int Join(String name, String email, String pw, String address, String tel) {
 
 		try {
 
@@ -59,9 +59,9 @@ public class MemberDAO {
 			String sql = "insert into member values(?,?,?,?,?)";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, name);
-			psmt.setString(2, address);
-			psmt.setString(3, email);
-			psmt.setString(4, pw);
+			psmt.setString(2, email);
+			psmt.setString(3, pw);
+			psmt.setString(4, address);
 			psmt.setString(5, tel);
 			// db에 sql문 명령준비
 

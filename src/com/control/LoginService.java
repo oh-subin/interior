@@ -38,7 +38,7 @@ public class LoginService extends HttpServlet {
 			
 			response.setContentType("text/html; charset=UTF-8"); 
 			PrintWriter writer = response.getWriter(); 
-			writer.println("<script>alert('로그인 성공! 선호하는 인테리어 취향을 선택해주세요.'); location.href='"+"favorite.jsp"+"';</script>"); 
+			writer.println("<script>alert('로그인 성공! 선호하는 인테리어 취향을 선택해주세요.'); location.href='"+"main.jsp"+"';</script>"); 
 			writer.close();
 			
 		}else { // 실패시 

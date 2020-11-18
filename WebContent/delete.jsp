@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Ήζ±ΈΌ® ΐΞΕΧΈ®Ύξ - ΘΈΏψΕ»Επ</title>
+  <title>λ°©κµ¬μ„ μΈν…λ¦¬μ–΄ - νμ›νƒν‡΄</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -41,7 +41,7 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">ΘΈΏψΕ»Επ</h1>
+                    <h1 class="h4 text-gray-900 mb-4">νε μ™μ™νƒε μ™μ™</h1>
                   </div>
                   <form class="user" action ="DeleteService" method="post">
                     <div class="form-group">
@@ -50,11 +50,11 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="Ε»Επ" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type= "submit" value ="οΏ½οΏ½οΏ½οΏ½" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="main.jsp">ΈήΐΞ ΖδΐΜΑφ·Ξ µΉΎΖ°΅±β</a>
+                    <a class="small" href="main.jsp">ε μ™μ™ε μ™μ™ ε μ™μ™ε μ™μ™ε μ™μ™ε μ™μ™ ε μ™μ™ε μ‹£κ³¤μ™ε μ™μ™</a>
               	</div>
                 </div>
               </div>

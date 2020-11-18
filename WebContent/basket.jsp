@@ -180,7 +180,8 @@
 	<div class="purchase_btn">
 		<a href="#" class="btn_1 d-none d-lg-block"
 			style="width: 150px; height: 56px; float: left; margin-left: 550px; margin-top: 100px;">집들이
-			가기</a> <a href="#" class="btn_1 d-none d-lg-block"
+			가기</a>
+		<a href="payment.jsp" class="btn_1 d-none d-lg-block"
 			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px;">구매하기</a>
 	</div>
 	<!-- 구매하기 버튼 end -->

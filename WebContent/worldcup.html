@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+   <meta charset="UTF-8">
+  <head> 
+    <title>방구석 인테리어-초보자추천</title>
+    <link rel="icon" href="./src/img/logo-.png"> 
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/tree.css">
+   
+  </head>
+  <body>
+    
+    <div id="header">
+      
+      <div> <img id="logo"><span id=title></span> "방구석 인테리어 홈키트 추천"</div>
+      <div id=inputArea >
+
+        <select id="typeSelect" class="selector">
+          <option value="" selected disabled>종류 선택</option>
+        </select>
+        <select id="roundSelect" class="selector">
+          <!-- <option value="" selected disabled>라운드 선택</option> -->
+          </select>
+          <button class="btn_rollover" id="start">시작</button>
+          <button class="btn_rollover" id="back" >뒤로가기</button>
+          <button class="btn_rollover" id="history" >히스토리보기</button>
+      </div>
+    </div>
+
+    
+      <div class="wrapper" style="height: 500px;">
+        <div class="content" id="left">
+          <img id="leftImg" src="">
+          <span class=c1 id="leftObj"></span>
+        </div>
+        <div id="roundInfo" style="width: 250px;"></div>
+    
+        <div class="content" id="right">
+            <img id="rightImg" src="" >
+            <span class=c1 id="rightObj"></span>
+        </div>
+      </div>
+            
+      <div id="openModal" class="modalDialog">
+          <div>	<a title="Close" class="close">X</a>
+            <div class="bracket">
+                <div class="bracket-left"></div>
+                <div class="bracket-center" id="winner"></div>
+                <div class="bracket-right"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="blockUI blockOverlay">
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+
+  
+</html>

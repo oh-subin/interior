@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<% request.setCharacterEncoding("EUC-KR"); %>
+<% request.setCharacterEncoding("UTF-8"); %>
 <html lang="en">
 <head>
 
-  <meta charset="EUC-KR">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>¹æ±¸¼® ÀÎÅ×¸®¾î - ·Î±×ÀÎ</title>
+  <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´ - ë¡œê·¸ì¸</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -42,7 +42,7 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">·Î±×ÀÎ</h1>
+                    <h1 class="h4 text-gray-900 mb-4">ë¡œê·¸ì¸</h1>
                   </div>
                   <form class="user" action ="LoginService" method="post">
                     <div class="form-group">
@@ -54,20 +54,20 @@
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">±â¾ïÇÏ±â</label>
+                        <label class="custom-control-label" for="customCheck">ê¸°ì–µí•˜ê¸°</label>
                       </div>
                     </div>
-                    <input type= "submit" value ="·Î±×ÀÎ" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type= "submit" value ="ë¡œê·¸ì¸" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="javascript:void(0)">ºñ¹Ð¹øÈ£¸¦ ÀØÀ¸¼Ì³ª¿ä?</a>
+                    <a class="small" href="javascript:void(0)">ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠìœ¼ì…¨ë‚˜ìš”?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.jsp">È¸¿ø°¡ÀÔ</a>
+                    <a class="small" href="register.jsp">íšŒì›ê°€ìž…</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="main.jsp">¸ÞÀÎ ÆäÀÌÁö·Î µ¹¾Æ°¡±â</a>
+                    <a class="small" href="main.jsp">ë©”ì¸ íŽ˜ì´ì§€ë¡œ ëŒì•„ê°€ê¸°</a>
               		</div>
                 </div>
               </div>

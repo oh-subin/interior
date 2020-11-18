@@ -3,11 +3,11 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+ <head>
         <!-- Required meta tags -->
         <meta charset="EUC-KR">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>방구석 인테리어-소개</title>
+        <title>방구석 인테리어-초보자추천</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,14 +30,14 @@
         <link rel="stylesheet" href="css/slick.css">
         <!-- style CSS -->
         <link rel="stylesheet" href="css/style.css">
-        
+       
     </head>
-   
+    
     <body>
         <%
 		String email = (String)session.getAttribute("email");	
 	%>
-       <!--::header part start::-->
+        <!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">
                 <div class="container">
@@ -58,10 +58,10 @@
                                             <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
+                                            <a class="nav-link" href="professional_mode.jsp">전문가 추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Beginner_Mode.jsp">초보자 추천</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" id="navbarDropdown"
@@ -70,12 +70,12 @@
                                                 커뮤니티
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">체험형 키트</a>
+                                                <a class="dropdown-item" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                                <a class="dropdown-item" href="SNS.jsp">키트 조합</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                            <a class="nav-link" href="QA.jsp">Q&A</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -88,14 +88,9 @@
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
-										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
-										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
-									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">정보수정</a> 
-										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
-										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
-									<%} %>
+									<a class="dropdown-item" href="update.jsp">정보수정</a> <a
+										class="dropdown-item" href="LogoutService">로그아웃</a> <a
+										class="dropdown-item" href="delete.jsp">회원탈퇴</a>
 								</div>
 							</div>
 							<a href="basket.jsp" 
@@ -107,99 +102,122 @@
                 </div>
             </div>
         </header>
- <!-- 수정: 상위메뉴 이름 지정 end -->
- <!-- Header part end-->
-                        
-<br><br>
-    <!-- about us css start-->
-    <section class="about_us section_padding">
+<!-- 수정: 상위메뉴 이름 지정 end -->
+<!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about_img">
-                        <img src="img/homepage/31.jpg" alt="#" style="height:400px; width:550px;">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about_text">
-                        <h5>홈키트란?</h5>
-                        <h2>셀프 인테리어를 어려워하는 당신을 위한 키트</h2>
-                        <p>코로나19, 사회적 거리두기 시행으로 집에 머무는 시간이 증가하는 시대, 인테리어의 관심은 점점 더 증가하고 있습니다.</p>
-                        <p>하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 하는 건 어려우셨죠?</p>
-                        <p>그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트로 당신의 방을 쉽고 빠르게 꾸며보세요. 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item text-center">
+                            <h2>Beginner Mode</h2>
+                            <p style="padding-bottom: 80px;">인테리어가 처음인 당신을 위한 추천 모드입니다.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about us css end-->
-
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3sS4he7onv0omSZNBR26vDxthKU5oj9Xzw&usqp=CAU"
-	style="margin-top: 400px;margin-left: 700px;">
-
-    <!--top place start-->
-    <div><h1 style="margin-top: 40px;margin-left: 740px;">메뉴 구성</h1></div>
-    <section class="event_part section_padding" style="margin-top: 50px;height: 570px;padding-top: 10px;">
+    <!-- breadcrumb start-->
+    <br><br><br><br><br>
+    <!-- about us css start-->
+    <section class="hotel_list section_padding single_page_hotel_list">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section_tittle text-center">
+                        <h2>인테리어 테마 선택하기</h2>
+                        <p>선호하는 인테리어 테마를 선택해주세요.<br><br> 당신의 인테리어 취향을 파악해 홈키트를 추천해드립니다.</p><hr>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="event_slider owl-carousel" style="margin-top: 110px;">
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="event_slider_content">
-                                        <h2>추천</h2>
-                                        <h5>추천받는 과정</h5>
-                                        <p><strong>1. 태그 선택하기:</strong> 인테리어에 필요한 사항을 태그로 입력합니다.<br></p>
-                                        <p><strong>2. 평점 등록하기:</strong> 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록합니다</p>
-                                        <a href="Beginner_Mode.jsp" class="btn_1">추천받으러 이동하기</a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="ol-lg-6 col-md-6">
-                                    <div class="event_slider_content">
-                                        <h2>중고키트 판매</h2>
-                                        <p>새로운 홈키트로 인테리어를 바꾸고 싶은 사용자를 위한 페이지입니다. 사용하지 않는 홈키트를 되팔고 새로운 홈키트를 구매할 수 있습니다.
-                                        	<br>구매자는 홈키트를 값싼 가격에 구매할 수 있어 인테리어 비용의 부담을 덜어드립니다.</p>
-                                        <!-- "javascript:void(0)" : 클릭 안 되게  -> 페이지 이동할 게 없기 때문에 -->
-                                        <a href="javascript:void(0)" class="btn_1">중고키트 판매하러 이동하기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="ol-lg-6 col-md-6">
-                                    <div class="event_slider_content">
-                                        <h2>쇼핑몰</h2>
-                                        <p>다양한 홈키트를 한번에 만나볼 수 있는 홈키트 쇼핑몰입니다. 
-                                        <br>여러 상품을 비교해보며 원하는 홈키트를 골라보세요!</p>
-                                        <a href="javascript:void(0)" class="btn_1">쇼핑몰 구경하러 이동하기</a>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
- </section>
-    <!-- 수정: 사이트 소개 end -->
-    <!--top place end-->
-
-    <br><br><br><br><br><br><br><br><br>
-    
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <img src="img/homepage/24.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <img src="img/homepage/25.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <img src="img/homepage/26.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br>
+      
+        <div class="game_btn" style="margin-left: 620px;">
+            <a href="worldcup.html" class="genric-btn info circle" style="width: 161.99074000000002px;height: 51.99074px;padding-top: 6px;">추천 시작</a><br>
+        </div>
+    </section>
+    <!-- about us css end-->
+<br><br><br><br><br><br><br><br>
+    <!--::industries start::-->
+    <section class="best_services section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section_tittle text-center">
+                        <h2>연관된 테마</h2>
+                        <p>선호하는 테마와 비슷한 테마 더보기</p><hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
+                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <p>미니멀&심플</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">>집들이가기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/28.jpg" alt=""></a>
+                        <h3>호텔리조트 풍으로 원없이 꾸민 드림하우스</h3>
+                        <p>프렌츠&프로방스</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">집들이가기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/30.jpg" alt=""></a>
+                        <h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
+                        <p>빈티지&레트로</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">집들이가기</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
+                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <p>미니멀&심플</p><br>
+                        <span>홈키트 가격 = 5만원</span><br><hr>
+                        <a href="#" class="genric-btn info circle">집들이가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::industries end::-->
+    <br><br><br><br><br>
     <!-- footer part start-->
     <footer class="footer-area">
             
              
                  <div class="row justify-content-center">
                      <div class="col-lg-12">
-                         <div class="copyright_part_text text-center" style="margin-top: 0px;">
+                         <div class="copyright_part_text text-center">
                              <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
