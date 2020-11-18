@@ -174,9 +174,8 @@
 						<div class="result_btn">
 							<a href="professional_mode.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
-								받기</a> <a href="#" class="genric-btn info radius"
-								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">집들
-								가기</a>
+								받기</a> <a href="payment.jsp" class="genric-btn info radius"
+								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
 						</div>
 					</div>
 				</div>
@@ -186,7 +185,7 @@
 
 	<!-- 홈키트 구성 보여주는 begin -->
 	<section class="about_us section_padding"
-		style="margin-bottom: 300px; margin-top: 100px;">
+		style="margin-bottom: 300px; margin-top: 100px; height: 70px;">
 		<div class="container">
 
 			<section

@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 
@@ -229,7 +228,7 @@
 												</select>
 											</div>
 											<div class="form_btn">
-												<a href="result.jsp" class="btn_1">1차 추천</a>
+												<a href="#" class="btn_1">1차 추천</a>
 											</div>
 										</div>
 									</form>
@@ -320,7 +319,7 @@
                 </div>
                </div>
 
-        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" style="margin-left: 650px; margin-top: 70px;">
+        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="location.href='result.jsp'" style="margin-left: 650px; margin-top: 70px;">
       </form>
        </section>
 	<br>

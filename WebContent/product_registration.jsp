@@ -191,7 +191,7 @@
                     </style>
                     <div class="menu" onClick="slide('sub1');" style="padding-left: 15px;">상품등록 ▼</div>
                     <div id="sub1" class="submenu">
-                        <div>간단 등록</div>
+                        <a href="simple_registration.jsp">간단 등록</a>
                         <div>상품 등록</div>
                         <div>세트상품 등록</div>
                         <div>엑셀 등록</div>
