@@ -105,24 +105,7 @@
  <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
                         
-    <!-- breadcrumb start-->
-    <!-- 수정: 사이트 소개 begin -->
-    <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item text-center">
-                            <h2>Homekit Process Presentation</h2>
-                            <p style="padding-bottom: 80px;">홈키트 추천 및 구매과정을 소개해드립니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- breadcrumb start-->
-<br><br><br><br><br>
+<br><br>
     <!-- about us css start-->
     <section class="about_us section_padding">
         <div class="container">
@@ -136,9 +119,9 @@
                     <div class="about_text">
                         <h5>홈키트란?</h5>
                         <h2>셀프 인테리어를 어려워하는 당신을 위한 키트</h2>
-                        <p>코로나 시대에서 집에 머무는 시간이 증가하는 시대 추세에 맞춰 인테리어의 관심은 점점 더 증가하는 추세입니다.</p>
-                        <p>하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 위한 소품 조합은 어려우셨죠?</p>
-                        <p>그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트 한개로 당신의 방을 쉽고 빠르게 꾸며보세요! 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
+                        <p>코로나19, 사회적 거리두기 시행으로 집에 머무는 시간이 증가하는 시대, 인테리어의 관심은 점점 더 증가하고 있습니다.</p>
+                        <p>하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 하는 건 어려우셨죠?</p>
+                        <p>그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트로 당신의 방을 쉽고 빠르게 꾸며보세요. 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
                     </div>
                 </div>
             </div>
@@ -146,27 +129,25 @@
     </section>
     <!-- about us css end-->
 
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3sS4he7onv0omSZNBR26vDxthKU5oj9Xzw&usqp=CAU"
+	style="margin-top: 400px;margin-left: 700px;">
+
     <!--top place start-->
-    <section class="event_part section_padding" style="margin-top: 500px;height: 570px;padding-top: 10px;">
+    <div><h1 style="margin-top: 40px;margin-left: 740px;">메뉴 구성</h1></div>
+    <section class="event_part section_padding" style="margin-top: 50px;height: 570px;padding-top: 10px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="event_slider owl-carousel" >
+                    <div class="event_slider owl-carousel" style="margin-top: 110px;">
                         <div class="single_event_slider">
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h5>홈키트 추천받는 과정</h5>
-                                        <h2>1. 추천 단계 선택하기</h2>
-                                        <p><strong>1-1. 초보자 추천:</strong> 인테리어가 처음인 사람을 위한 추천모드 <br>
-                                            <strong>사용방법:</strong> 제시되는 테마 중에 마음에 드는 것을 선택하여 당신의 인테리어 취향을 파악한 후 추천해드립니다.
-                                        </p><br>
-                                        <p><strong>1-2. 전문가 추천:</strong> 인테리어에 익숙한 사람을 위한 추천모드 <br>
-                                            <strong>사용방법:</strong> 인테리어 관련 태그를 선택한 후 추천받기 버튼을 누르면 당신의 인테리어 취향에 맞는 홈키트를 추천해드립니다.
-                                        </p>
-    
-                                        <a href="Beginner_Mode.jsp" class="btn_1">초보자 모드로 이동</a>
-                                        <a href="professional_mode.jsp" class="btn_1">전문가 모드로 이동</a>
+                                        <h2>추천</h2>
+                                        <h5>추천받는 과정</h5>
+                                        <p><strong>1. 태그 선택하기:</strong> 인테리어에 필요한 사항을 태그로 입력합니다.<br></p>
+                                        <p><strong>2. 평점 등록하기:</strong> 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록합니다</p>
+                                        <a href="Beginner_Mode.jsp" class="btn_1">추천받으러 이동하기</a> 
                                     </div>
                                 </div>
                             </div>
@@ -175,12 +156,11 @@
                             <div class="row justify-content-end">
                                 <div class="ol-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h5>홈키트 추천받는 과정</h5>
-                                        <h2>2. 추천 테마 선택하기</h2>
-                                        <p>각 추천 모드를 선택했다면 추천 방법에 따라 홈키트를 추천받으세요. 추천받은 홈키트를 유심히 보고 마음에 드는 것을 선택해주세요!
-                                        </p>
+                                        <h2>중고키트 판매</h2>
+                                        <p>새로운 홈키트로 인테리어를 바꾸고 싶은 사용자를 위한 페이지입니다. 사용하지 않는 홈키트를 되팔고 새로운 홈키트를 구매할 수 있습니다.
+                                        	<br>구매자는 홈키트를 값싼 가격에 구매할 수 있어 인테리어 비용의 부담을 덜어드립니다.</p>
                                         <!-- "javascript:void(0)" : 클릭 안 되게  -> 페이지 이동할 게 없기 때문에 -->
-                                        <a href="javascript:void(0)" class="btn_1">추천 결과로 이동</a>
+                                        <a href="javascript:void(0)" class="btn_1">중고키트 판매하러 이동하기</a>
                                     </div>
                                 </div>
                             </div>
@@ -189,22 +169,20 @@
                             <div class="row justify-content-end">
                                 <div class="ol-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h5>홈키트 추천받는 과정</h5>
-                                        <h2>3. 홈키트 선택하기</h2>
-                                        <p>마음에 드는 홈키트를 선택하셨나요? 그러면 이제 홈키트를 구매하세요!<br> 구매 도중에 홈키트에 마음에 안드는 소품이 있으신가요? 그럼 추가/삭제를 통하여 소품을 자유롭게 선택하세요! 당신의 취향대로 홈키트를 구성해보세요!
-                                        </p>
-                                        <div class="rating">
-                                        </div>
-                                        <a href="javascript:void(0)" class="btn_1">홈키트 구매하기</a>
+                                        <h2>쇼핑몰</h2>
+                                        <p>다양한 홈키트를 한번에 만나볼 수 있는 홈키트 쇼핑몰입니다. 
+                                        <br>여러 상품을 비교해보며 원하는 홈키트를 골라보세요!</p>
+                                        <a href="javascript:void(0)" class="btn_1">쇼핑몰 구경하러 이동하기</a>
                                     </div>
+                                        
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ </section>
     <!-- 수정: 사이트 소개 end -->
     <!--top place end-->
 
@@ -216,7 +194,7 @@
              
                  <div class="row justify-content-center">
                      <div class="col-lg-12">
-                         <div class="copyright_part_text text-center">
+                         <div class="copyright_part_text text-center" style="margin-top: 0px;">
                              <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
