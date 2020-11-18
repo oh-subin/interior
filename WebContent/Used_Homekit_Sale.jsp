@@ -112,7 +112,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
-                            <h2>Used Homekit Sale</h2>
+                            <h2 style="margin-bottom: 50px;">Used Homekit Sale</h2>
                             <p style="padding-bottom: 80px;">구매했던 키트를 자유롭게 거래하세요!</p>
                         </div>
                     </div>

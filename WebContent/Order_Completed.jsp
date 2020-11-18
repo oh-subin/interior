@@ -113,7 +113,7 @@
                     <div class="col-lg-12">
                         <div class="breadcrumb_iner">
                             <div class="breadcrumb_iner_item text-center">
-                                <h2 style="padding-bottom: 30px; padding-top:120px;" >"Order Completed"</h2>
+                                <h2 style="padding-top:80px; margin-bottom:120px" >"Order Completed"</h2>
                                 <p style="padding-bottom: 30px;">고객님, 주문이 완료되었습니다. <br><br> 저희 상품을 구매해주셔서 감사합니다.</p>
                                 <p>주문하신 상품의 배송은 15일 이내 완료됩니다. <br><br> 상세 배송정보는 배송조회 페이지에서 확인이 가능합니다.</p>
                             </div>

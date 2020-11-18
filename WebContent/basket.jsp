@@ -114,23 +114,6 @@
 	<!-- 수정: 상위메뉴 이름 지정 end -->
 	<!-- Header part end-->
 
-	<!-- banner part start-->
-	<section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb_iner">
-						<div class="breadcrumb_iner_item text-center">
-							<h2>Shopping Basket</h2>
-							<p style="padding-bottom: 80px;">선택한 홈키트를 구매해보세요.</p>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- banner part start-->
 	<br>
 	<br>
 	<br>
@@ -142,10 +125,10 @@
 	<div class="whole-wrap">
 		<div class="container box_1170">
 			<div class="section-top-border">
-				<h3 class="mb-30">주문하실 상품명 및 수량을 확인해주세요.</h3>
+				<h3 class="mb-30" style="font-size: 20px">주문하실 상품명 및 수량을 확인해주세요.</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
-						<div class="table-head">
+						<div class="table-head" style="font-size: 18px">
 							<div class="country" style="margin-left: 50px;">상품사진</div>
 							<div class="country" style="margin-left: 50px;">상품명</div>
 							<div class="country">수량</div>
@@ -182,8 +165,8 @@
 
 	<!-- 수정: 총 금액 부분 begin -->
 	<div class="total_cost_text">
-		<dl>
-			<strong><span style="margin-left: 550px; font-size: 30px;">총
+		<dl style="margin-top:10px; margin-left:240px">
+			<strong><span style="margin-left: 550px; font-size: 20px;">총
 					주문금액</span></strong>
 			<span style="margin-left: 100px; font-size: 20px;"><%=sum %>원 + 배송비
 				2500원 = <%=sum+2500%>원</span>
@@ -196,7 +179,7 @@
 	<!-- 구매하기 버튼 begin -->
 	<div class="purchase_btn">
 		<a href="#" class="btn_1 d-none d-lg-block"
-			style="width: 150px; height: 56px; float: left; margin-left: 500px; margin-top: 100px;">집들이
+			style="width: 150px; height: 56px; float: left; margin-left: 550px; margin-top: 100px;">집들이
 			가기</a> <a href="#" class="btn_1 d-none d-lg-block"
 			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px;">구매하기</a>
 	</div>

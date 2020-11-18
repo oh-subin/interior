@@ -158,7 +158,7 @@
 				<div class="col-lg-12" >
 					<div class="booking_menu">
 						<h2 style="color:#012a4a; font-size:40px;">1. 태그 선택</h2><br>
-						<p style="color:#01497c; font-size:20px;background-color:#e2eafc;">인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
+						<p style="color:rgb(102, 102, 102); font-size:20px;background-color:#fdefedb0;">인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
 						
 						<!-- 프로그레스 바 -->
 							<!-- <p>추천 진행도</p>
@@ -210,7 +210,7 @@
 												</select>
 											</div>
 											<div class="form_btn">
-												<a href="result.jsp" class="btn_1" style="background-color:rgb(168, 167, 167);">1차 추천</a>
+												<a href="result.jsp" class="btn_1" style="background-color:rgba(199, 199, 199, 0.506);">1차 추천</a>
 											</div>
 										</div>
 									</form>
@@ -241,7 +241,7 @@
                 <div class="col-xl-6" >
                     <div class="section_tittle text-center" >
                         <h2 style="color:#012a4a font-size:40px;">2. 평점 매기기</h2>
-						<p style="color:#01497c; font-size:20px; background-color:#e2eafc;">버튼을 클릭하여 평점을 1~5까지 입력해주세요 </p>
+						<p style="color:rgb(102, 102, 102); font-size:20px;background-color:#fdefedb0;">버튼을 클릭하여 평점을 1~5까지 입력해주세요 </p>
                     </div>
                 </div>
             </div>
@@ -258,7 +258,7 @@
 	                           <!-- 모달창 버튼   -->
 	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff; ">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#f1dede; border-color:#fff; ">평점 등록하기</button>
                      	   </div>
                    </div>
                    <div class="col-md-6" style="float:right;">
@@ -269,7 +269,7 @@
 	                            <!-- 모달창 버튼 BEGIN  -->
 	                            <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#f1dede; border-color:#fff;">평점 등록하기</button>
 	                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 								  <div class="modal-dialog" style="margin-top: 200px;">
 								    <div class="modal-content">
@@ -289,7 +289,7 @@
 								      </div>
 								      <div class="modal-footer">
 								        <button type="button" class="btn btn-secondary" data-dismiss="modal">창 닫기</button>
-								        <button type="button" class="btn btn-primary">등록하기</button>
+								        <button type="button" class="btn btn-primary" style="background-color:#dfcbcb;border-color:#dfcbcb">등록하기</button>
 								      </div>
 								    </div>
 								  </div>
@@ -309,7 +309,7 @@
 	                           <!-- 모달창 버튼   -->
 	                           <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#f1dede; border-color:#fff;">평점 등록하기</button>
                      	   </div>
                     </div>
                     <div class="col-md-6" style="float:right;">
@@ -320,15 +320,16 @@
                                 <!-- 모달창 버튼   -->
                                <button type="button" class="btn btn-primary" data-toggle="modal" 
 	                           data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 150px;
-	                           margin-top: 30px; background-color:#b8bedd; border-color:#fff;">평점 등록하기</button>
+	                           margin-top: 30px; background-color:#f1dede; border-color:#fff;">평점 등록하기</button>
                      		 </div>
                         </div>
                     </div>
                 </div>
                </div>
-
-        <input type="button" id="select" value="2차 추천" class="btn_1" onclick="test_checkbox();" 
-        style="margin-left: 760px; margin-top: 30px; border-color:#fff;">
+			<div class="form_btn">
+				<a href="#" class="btn_1" style="background-color:rgba(199, 199, 199, 0.506); margin-left: 760px; margin-top: 30px">2차 추천</a>
+			</div>
+        
         </form>
        </section>
 	<br>

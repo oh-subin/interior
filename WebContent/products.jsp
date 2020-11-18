@@ -116,7 +116,7 @@
 				<div class="col-lg-12">
 					<div class="breadcrumb_iner">
 						<div class="breadcrumb_iner_item text-center">
-                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:#6c757d; margin-bottom: 100px">Homekit Products</h2>
+                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:rgb(168, 167, 167); margin-bottom: 100px">Homekit Products</h2>
                          </div>
                      </div>
                  </div>

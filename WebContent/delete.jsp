@@ -50,7 +50,7 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="Ε»Επ" class="btn btn-primary btn-user btn-block">
+                    <input type= "submit" value ="Ε»Επ" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                   </form>
                   <hr>
                   <div class="text-center">
@@ -67,7 +67,26 @@
     </div>
 
   </div>
+<!-- footer part start-->
+	<footer class="footer-area">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="copyright_part_text text-center">
+					<p class="footer-text m-0">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script>
+						All rights reserved | This template is made with <i
+							class="ti-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
 
+	</footer>
+	<!-- footer part end-->
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
