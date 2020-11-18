@@ -5604,4 +5604,162 @@ h1, h2, h3, h4, h5, h6 {
         background-color: white;
       }
 
+      /* Detail page 상품상세사진 nav바 */
+
+element.style {
+  position: sticky;
+  top: 79.9943px;
+}
+.production-selling-navigation-wrap {
+  z-index: 100;
+  transition: top .1s;
+  background-color: #fcece9;
+}
+
+element.style {
+  position: relative;
+  
+}
+
+.production-selling-navigation {
+  background-color: #fafafa;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.production-selling-navigation {
+  background-color: #fff;
+  z-index: 100;
+  transition: top .1s;
+}
+.production-selling-navigation__content {
+  padding: 0 60px;
+}
+
+.production-selling-navigation__content {
+  padding: 0 40px;
+}
+.production-selling-navigation__content {
+  max-width: 1136px;
+  margin: 0 auto;
+}
+ol, ul {
+  list-style: none;
+}
+.production-selling-navigation__list {
+  width: 66.6666%;
+}
+.production-selling-navigation__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.production-selling-navigation__list>li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0px;
+  -moz-box-flex: 1;
+  -moz-flex: 1 0 0px;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+li:first-child>.production-selling-navigation__item {
+  border-left: none;
+}
+.production-selling-navigation__item.production-selling-navigation__item--active {
+  color: #35c5f0;
+  border-bottom: 3px solid #35c5f0;
+  z-index: 1;
+}
+.production-selling-navigation__item {
+  left: 1px;
+  padding: 14px 10px 15px;
+  font-size: 15px;
+  background-color: #fafafa;
+}
+.production-selling-navigation__item {
+  position: relative;
+  display: block;
+  top: 1px;
+  margin: -1px 0 0 -1px;
+  padding: 14px 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  color: #424242;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  border-color: transparent transparent #ededed #ededed;
+  transition: color .1s;
+}
+.production-selling-navigation__list>li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0px;
+  -moz-box-flex: 1;
+  -moz-flex: 1 0 0px;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+.production-selling-navigation__item__count {
+  margin-left: 4px;
+  color: #9e9e9e;
+  font-size: 15px;
+}
+element.style {
+    position: sticky;
+    top: 79.9943px;
+}
+.production-selling-navigation-wrap {
+    z-index: 100;
+    transition: top .1s;
+}
+
+
+/* Detail Page.html의 수량부분 css */
+.content_right{margin:20px; width:520px; padding-top:30px;} 
+.content_right h2{font-size:32px; height:50px; color:#444; line-height:1; border-bottom:1px solid #dfdfdf;} 
+.content_right dl{display:table; width:100%; } 
+.content_right dl dt{display:table-cell; vertical-align:top; width:20%;} 
+.content_right dl dd{display:table-cell; vertical-align:top; width:80%;}
+
+/* product.html의 별점 css */
+.checked {
+  color: rgb(255, 166, 240);
+}
+
+/* product_detail.html 사이드 바 css */
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
       
